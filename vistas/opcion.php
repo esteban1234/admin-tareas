@@ -36,7 +36,7 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li><a href="index.php" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li class="active"><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
           <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
@@ -46,7 +46,7 @@
 
       <section class="main">
         <section class="tab-content">
-          <section class="tab-pane" id="configuration">
+          <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
                 <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>System</span></a></li>
@@ -57,73 +57,99 @@
             <section class="tab-content content">
               <section class="tab-pane active fade in" id="access">
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Opciones</div>
+                      <div class="panel-heading">Tabla de Resultados</div>
                       <div class="panel-body">
-                        <div class="col-md-3">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading dark-blue">
-                                <i class="fa fa-users fa-fw fa-3x"></i>
+                        <form>
+                          <div class="row">
+                            <div class="row">
+                              <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Tabla</label>
                               </div>
-                            </a>
-                            <div class="circle-tile-content dark-blue">
-                              <div class="circle-tile-description text-faded">Clientes</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="opcion.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
 
-                        <div class="col-md-3">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading green">
-                                <i class="fa fa-line-chart fa-fw fa-3x"></i>
-                              </div>
-                            </a>
-                            <div class="circle-tile-content green">
-                              <div class="circle-tile-description text-faded">Departamentos</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
+                              <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Acción</label>
+                              </div>  
 
-                        <div class="col-md-3">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading orange">
-                                <i class="fa fa-building-o fa-fw fa-3x"></i>
-                              </div>
-                            </a>
-                            <div class="circle-tile-content orange">
-                              <div class="circle-tile-description text-faded">Empresas</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
+                              <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Usuario</label>
+                              </div>  
 
-                        <div class="col-md-3">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading blue">
-                                <i class="fa fa-address-book-o fa-fw fa-3x"></i>
-                              </div>
-                            </a>
-                            <div class="circle-tile-content blue">
-                              <div class="circle-tile-description text-faded">Tareas</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <div class="group">      
+                                <input type="date" value="" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Fecha</label>  
+                              </div><br><br>
                             </div>
-                          </div>
-                        </div>
+
+                            <div class="row">
+                              <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Sentencia</label>
+                              </div>  
+
+                              <div class="group">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Usuario</label>
+                              </div>  
+
+                              <div class="group left">      
+                                <button class="btn btn-primary adicional">Buscar</button>
+                              </div>  
+                            </div>
+                          </div>  
+                        </form>
                       </div>
                     </div>
                   </div>
-                </div>
+              
+                  <div class="col-xs-12 col-sm-9 col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Tabla de Resultados</div>
+                      <div class="panel-body">
+                        <table class="table table-striped table-hover">
+                          <thead>
+                            <tr class="table-color">
+                            <th>#</th>
+                            <th>Nombre Cliente</th>
+                            <th>RFC</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Dirección</th>
+                            <th>Opciones</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>1</td>
+                              <td>Jhon Doe</td>
+                              <td>12312312312</td>
+                              <td>9992786534</td>
+                              <td>rh@hotmail.com</td>
+                              <td>Calle 16, Col. Yucatan</td>
+                              <td>Eliminar</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- END row -->
               </section>  <!-- END tab-pane -->
               
               <section class="tab-pane fade" id="roles">
