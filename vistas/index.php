@@ -36,8 +36,8 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
-          <li><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
+          <li><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li class="active"><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
           <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
@@ -168,7 +168,7 @@
                             <div class="circle-tile-content dark-blue">
                               <div class="circle-tile-description text-faded">Clientes</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="opcion.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Opcliente.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>
@@ -183,7 +183,7 @@
                             <div class="circle-tile-content green">
                               <div class="circle-tile-description text-faded">Departamentos</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Opdepartamento.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>
@@ -198,7 +198,7 @@
                             <div class="circle-tile-content orange">
                               <div class="circle-tile-description text-faded">Empresas</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Opempresa.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>
@@ -213,7 +213,7 @@
                             <div class="circle-tile-content blue">
                               <div class="circle-tile-description text-faded">Tareas</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Optarea.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>
@@ -275,7 +275,7 @@
                             <div class="circle-tile-content dark-blue">
                               <div class="circle-tile-description text-faded">Cotizaciones</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer" data-toggle="tab">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Opcotizacion.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>
@@ -290,7 +290,7 @@
                             <div class="circle-tile-content green">
                               <div class="circle-tile-description text-faded">Seguimientos</div><br>
                               <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
+                              <a href="Opseguimiento.php" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
                             </div>
                           </div>
                         </div>

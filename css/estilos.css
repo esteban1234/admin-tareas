@@ -197,7 +197,7 @@ nav.subbar > ul.nav.nav-tabs > li.active > a {
 }
 
 .group-newancho{
-  margin: 2% 3%;
+  margin: 2% 0px;
   width: 95%;
 }
 
@@ -291,9 +291,6 @@ input:focus ~ .highlight {
   to  { width:0; background:transparent; }
 }
 
-.group{
-  /*border: 2px solid green;*/
-}
 
 .left{
   text-align: left;

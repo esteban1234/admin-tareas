@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>System</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>Roles</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Busqueda Clientes</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo Cliente</span></a></li>
               </ul>
             </nav>
               
@@ -68,28 +68,28 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Tabla</label>
+                                <label>Nombre</label>
                               </div>
 
                               <div class="group">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Acción</label>
+                                <label>Email</label>
                               </div>  
 
                               <div class="group">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Usuario</label>
+                                <label>R.F.C</label>
                               </div>  
 
                               <div class="group">      
                                 <input type="date" value="" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Fecha</label>  
+                                <label>Teléfono</label>  
                               </div><br><br>
                             </div>
 
@@ -98,14 +98,7 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Sentencia</label>
-                              </div>  
-
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Usuario</label>
+                                <label>Dirección</label>
                               </div>  
 
                               <div class="group left">      
@@ -152,109 +145,137 @@
                 </div> <!-- END row -->
               </section>  <!-- END tab-pane -->
               
-              <section class="tab-pane fade" id="roles">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-8 col-md-9">
+              <section class="tab-pane fade in content" id="roles">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Something</div>
-                      <div class="panel-body"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+                      <div class="panel-heading">Ingresar Clientes</div>
+                      <div class="panel-body">
+                        <form>
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>RFC</label>
+                              </div>
+                            </div>
+                            <div class="col-md-7">
+                              <div class="group group-newancho group-newancho-left">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Colonia</label>
+                              </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Código Postal</label>
+                                </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Calle/Av/Carretera</label>
+                                </div> 
+                            </div>
+                          </div>
+                          
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nombre Cliente</label>
+                              </div>
+                            </div>
+                            <div class="col-md-7">
+                              <div class="group group-newancho group-newancho-left">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Núm. Interior</label>
+                              </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Núm. Exterior</label>
+                                </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Cruzamientos</label>
+                                </div> 
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Telefono</label>
+                              </div>
+                            </div>
+                            <div class="col-md-7">
+                              <div class="group group-newancho group-newancho-left">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Estado</label>
+                              </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Municipio</label>
+                                </div>
+
+                                <div class="group group-newancho group-newancho-left">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Ciudad</label>
+                                </div> 
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Correo</label>
+                              </div>
+                            </div>
+                            <div class="col-md-7 right">
+                              <br>
+                              <div class="group b">      
+                                <button class="btn btn-primary adicional">Enviar</button>
+                              </div>
+
+                              <div class="group b">
+                                <a href="#" class="btn btn-primary adicional">Cancelar</a>   
+                                <!-- <button class="btn btn-primary adicional">Cancelar</button> -->
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                  </div>
-                    
-                  <div class="hidden-xs col-sm-4 col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Something</div>
-                        <div class="panel-body"><br/><br/><br/></div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Something</div>
-                        <div class="panel-body"><br/><br/><br/></div>
-                    </div>
-                  </div>
-                </div>
               </section>
             </section>  <!-- END tab-content -->
           </section> <!-- END tab-pane -->
-
-           
-          <section class="tab-pane" id="users">
-            <!-- <nav class="subbar">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>System</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>Roles</span></a></li>
-              </ul>
-            </nav> -->
-              
-            <section class="tab-content content">
-              <section class="tab-pane active fade in" id="access">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">Opciones</div>
-                      <div class="panel-body">
-
-                        <div class="col-md-6">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading dark-blue">
-                                <i class="fa fa-users fa-fw fa-3x"></i>
-                              </div>
-                            </a>
-                            <div class="circle-tile-content dark-blue">
-                              <div class="circle-tile-description text-faded">Cotizaciones</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer" data-toggle="tab">Entrar <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="circle-tile">
-                            <a href="#">
-                              <div class="circle-tile-heading green">
-                                <i class="fa fa-line-chart fa-fw fa-3x"></i>
-                              </div>
-                            </a>
-                            <div class="circle-tile-content green">
-                              <div class="circle-tile-description text-faded">Seguimientos</div><br>
-                              <!-- <div class="circle-tile-number text-faded">265<span id="sparklineA"></span></div> -->
-                              <a href="#" class="circle-tile-footer">Entrar <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>  <!-- END tab-pane -->
-              
-              <section class="tab-pane fade" id="roles">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-8 col-md-9">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">Something</div>
-                      <div class="panel-body"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
-                    </div>
-                  </div>
-                    
-                  <div class="hidden-xs col-sm-4 col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Something</div>
-                        <div class="panel-body"><br/><br/><br/></div>
-                    </div>
-                    
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Something</div>
-                        <div class="panel-body"><br/><br/><br/></div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </section>  <!-- END tab-content -->
-          </section>
-           
-          <section class="tab-pane fade" id="mail">  </section>
         </section>  <!-- END tab-content -->
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
