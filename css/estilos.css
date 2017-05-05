@@ -201,16 +201,27 @@ nav.subbar > ul.nav.nav-tabs > li.active > a {
   width: 95%;
 }
 
-input {
+input, select {
   font-size:18px;
-  padding: 10px 10px 10px 5px;
   display: block;
   width:100%;
   border:none;
   border-bottom:1px solid #757575;
 }
 
-input:focus{ outline:none; }
+.filestyle{
+  border: 0px;
+}
+
+input{
+  padding: 10px 10px 10px 5px;
+}
+
+select{
+  padding: 13px 10px 10px 5px;
+}
+
+input:focus, select:focus{ outline:none; }
 
 /* LABEL ======================================= */
 label          {
@@ -226,8 +237,20 @@ label          {
   -webkit-transition:0.2s ease all;
 }
 
+.control-label{
+  
+}
+
 /* active state */
-input:focus ~ label, input:valid ~ label    {
+input:focus ~ label, input:valid ~ label{
+  top:-12px;
+  font-size:14px;
+  /*color:#5264AE;*/
+  color: #000;
+}
+
+
+select:focus ~ label, select:valid ~ label{
   top:-12px;
   font-size:14px;
   /*color:#5264AE;*/
@@ -255,7 +278,7 @@ input:focus ~ label, input:valid ~ label    {
 }
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+input:focus ~ .bar:before, input:focus ~ .bar:after, select:focus ~ .bar:before, select:focus ~ .bar:after {
   width:50%;
 }
 
@@ -271,7 +294,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 /* active state */
-input:focus ~ .highlight {
+input:focus ~ .highlight, select:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;

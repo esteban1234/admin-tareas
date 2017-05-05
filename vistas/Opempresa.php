@@ -135,11 +135,9 @@
                         <form>
                           <div class="row">
                             <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Logo</label>
+                              <div class="form-group">
+                                <label class="control-label">A file upload button without icon</label>
+                                <input type="file" class="filestyle" data-icon="false">
                               </div>
                             </div>
                             <div class="col-md-7">

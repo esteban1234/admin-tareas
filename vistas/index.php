@@ -77,7 +77,7 @@
                           </div>  
 
                           <div class="group">      
-                            <input type="date" value="" required>
+                            <input type="date" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Fecha</label>  
@@ -93,10 +93,25 @@
                           </div>  
 
                           <div class="group">      
-                            <input type="text" required>
+                            <!-- <input type="text" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Usuario</label>
+                            <label>Usuario</label> -->
+                            
+                              <fieldset class="group">
+                                <input name="group1" type="radio">
+                                <label for="radio11">Todos</label>
+                              </fieldset>
+
+                              <fieldset class="group">
+                                <input name="group1" type="radio">
+                                <label for="radio11">></label>
+                              </fieldset>
+
+                              <fieldset class="group">
+                                <input name="group1" type="radio">
+                                <label for="radio11">X</label>
+                              </fieldset>
                           </div>  
 
                           <div class="group left">      

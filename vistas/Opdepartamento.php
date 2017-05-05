@@ -66,9 +66,10 @@
                             <div class="row">
                               <div class="group">      
                                 <input type="text" required>
+                                 
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre</label>
+                                <label>Nombre</label><br>
                               </div>
 
                               <div class="group">      
@@ -123,7 +124,11 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="group group-newancho">
-                                <input type="text" required>
+                                <!-- <input type="text" required> -->
+                                <select name="" id="">
+                                  <option value="1">1</option>
+                                  <option value="1">2</option>
+                                </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Elige Empresa</label>
