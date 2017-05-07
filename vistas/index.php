@@ -36,8 +36,8 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
-          <li class="active"><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
+          <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
           <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
@@ -93,25 +93,24 @@
                           </div>  
 
                           <div class="group">      
-                            <!-- <input type="text" required>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label>Usuario</label> -->
-                            
-                              <fieldset class="group">
-                                <input name="group1" type="radio">
-                                <label for="radio11">Todos</label>
-                              </fieldset>
+                              <div class="radio">
+                                
+                               <div>
+                                  <input type="radio" name="sexo" id="hombre" checked="selected"><br>
+                                  <label for="hombre" class="input-radio">Todos</label>
+                               </div>
+                                
+                                <div>
+                                  <label for="mujer" class="input-radio">M</label>
+                                  <input type="radio" name="sexo" id="mujer"> <br>  
+                                </div>
 
-                              <fieldset class="group">
-                                <input name="group1" type="radio">
-                                <label for="radio11">></label>
-                              </fieldset>
-
-                              <fieldset class="group">
-                                <input name="group1" type="radio">
-                                <label for="radio11">X</label>
-                              </fieldset>
+                                <div>
+                                  <label for="alien" class="input-radio">X</label>
+                                  <input type="radio" name="sexo" id="alien">
+                                </div>
+                                
+                              </div>
                           </div>  
 
                           <div class="group left">      

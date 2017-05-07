@@ -135,11 +135,14 @@
                         <form>
                           <div class="row">
                             <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
+                              <div class="group group-newancho">
+                                <select name="" id="">
+                                  <option value="1">1</option>
+                                  <option value="1">2</option>
+                                </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>RFC</label>
+                                <label>Elige Empresa</label>
                               </div>
                             </div>
                             <div class="col-md-7">
@@ -147,21 +150,21 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Colonia</label>
+                                <label>Nombre</label>
                               </div>
 
                                 <div class="group group-newancho group-newancho-left">      
                                   <input type="text" required>
                                   <span class="highlight"></span>
                                   <span class="bar"></span>
-                                  <label>Código Postal</label>
+                                  <label>Costo</label>
                                 </div>
 
                                 <div class="group group-newancho group-newancho-left">      
                                   <input type="text" required>
                                   <span class="highlight"></span>
                                   <span class="bar"></span>
-                                  <label>Calle/Av/Carretera</label>
+                                  <label>Duración</label>
                                 </div> 
                             </div>
                           </div>
@@ -169,77 +172,22 @@
                           <div class="row">
                             <div class="col-md-5">
                               <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nombre Cliente</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Núm. Interior</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
                                   <input type="text" required>
                                   <span class="highlight"></span>
                                   <span class="bar"></span>
-                                  <label>Núm. Exterior</label>
+                                  <label>Descripción</label>
                                 </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Cruzamientos</label>
-                                </div> 
                             </div>
                           </div>
 
                           <div class="row">
                             <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Telefono</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Estado</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Municipio</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Ciudad</label>
-                                </div> 
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Correo</label>
-                              </div>
+                              <div class="form-group">
+  <label for="esReusable" class="control-label col-sm-2">Es Reusable</label>
+  <div class="col-sm-6">
+    <input type="checkbox" name="esReusable" id="esReusable" data-toggle="toggle" data-on="<i class='glyphicon glyphicon-ok'></i></span>" data-off="<i class='glyphicon glyphicon-remove'></i>"  data-onstyle="primary" value='1'>
+  </div>
+ </div>
                             </div>
                             <div class="col-md-7 right">
                               <br>

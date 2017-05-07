@@ -136,7 +136,7 @@
                           <div class="row">
                             <div class="col-md-5">
                               <div class="form-group">
-                                <label class="control-label">A file upload button without icon</label>
+                                <!-- <label class="control-label">A file upload button without icon</label> -->
                                 <input type="file" class="filestyle" data-icon="false">
                               </div>
                             </div>

@@ -86,7 +86,7 @@
                               </div>  
 
                               <div class="group">      
-                                <input type="date" value="" required>
+                                <input type="text" value="" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Teléfono</label>  

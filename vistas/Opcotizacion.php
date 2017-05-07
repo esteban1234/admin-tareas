@@ -85,27 +85,34 @@
                                 <label>Empresa</label>
                               </div>  
 
-                              <div class="group">      
-                                <input type="date" value="" required>
+                              <div class="group">
+                                <select name="" id="">
+                                  <option value="1">1</option>
+                                  <option value="1">2</option>
+                                </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Tipo</label>  
-                              </div><br><br>
-                            </div>
+                                <label>Elige Empresa</label>
+                              </div>
+                            </div> <br>
 
                             <div class="row">
                               <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Fecha Desde</label>
+                                <div class='input-group date' id='datetimepicker1'>
+                                  <input type='text' class="form-control">
+                                  <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                  </span>
+                                </div>
                               </div>  
 
                               <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Fecha Hasta</label>
+                                <div class='input-group date' id='datetimepicker1'>
+                                  <input type='text' class="form-control">
+                                  <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                  </span>
+                                </div>
                               </div> 
 
                               <div class="group left">      
@@ -290,8 +297,14 @@
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
 
+        
     <script src="../js/jquery.js"></script>
     <script src="../js/general.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
   </body>
 </html>

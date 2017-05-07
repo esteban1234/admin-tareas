@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-    padding-left: 0px;
+    padding-right: 50px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -201,7 +201,7 @@ nav.subbar > ul.nav.nav-tabs > li.active > a {
   width: 95%;
 }
 
-input, select {
+input, select{
   font-size:18px;
   display: block;
   width:100%;
@@ -358,4 +358,11 @@ input:focus ~ .highlight, select:focus ~ .highlight {
 
 .btn-left{
   margin-right: 2%;
+}
+
+
+/************ESTILO INPUTS TIPO RADIO*************/
+.radio input[type="radio"] {
+    display: inline-block;
+    width: 20px;
 }
