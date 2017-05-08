@@ -77,7 +77,7 @@
                           </div>  
 
                           <div class="group">      
-                            <input type="date" required>
+                            <input type="date" value="<?php echo date("d/m/Y"); ?>" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Fecha</label>  

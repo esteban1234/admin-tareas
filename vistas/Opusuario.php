@@ -61,7 +61,7 @@
                     <div class="panel panel-default">
                       <div class="panel-heading">Proyectos Responsable</div>
                       <div class="panel-body">
-                        <table class="table table-striped table-hover">
+                        <table class="table table-striped">
                           <thead>
                             <tr class="table-color">
                               <th>Fecha</th>
@@ -86,7 +86,7 @@
                     <div class="panel panel-default">
                       <div class="panel-heading">Tareas Asignadas</div>
                       <div class="panel-body">
-                        <table class="table table-striped table-hover">
+                        <table class="table table-striped">
                           <thead>
                             <tr class="table-color">
                               <th>Fecha</th>

@@ -14,5 +14,7 @@
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilosn.css">
 		<link rel="stylesheet" href="../css/responsivo.css">
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 		<!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed" rel="stylesheet"> -->
 	</head>
