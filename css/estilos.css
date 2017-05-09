@@ -360,9 +360,37 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   margin-right: 2%;
 }
 
+.new-ancho{
+  width: 80%;
+}
+
 
 /************ESTILO INPUTS TIPO RADIO*************/
-.radio input[type="radio"] {
+/*.radio input[type="radio"] {
     display: inline-block;
     width: 20px;
+}
+*/
+
+/*.radio{
+  border: 2px solid red;
+  height: 100%;
+}*/
+
+.input-op{
+  margin-left: 60%;
+  text-align: left;
+}
+
+.pr{
+  border: 2px solid yellow;
+}
+
+.btn-width{
+  width: 100%;
+}
+
+.back-color{
+  background: #2A3F54;
+  color: #fff;
 }

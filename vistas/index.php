@@ -39,8 +39,8 @@
           <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
           <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
-          <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
-          <li><a href="#mail" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
+          <li><a href="#utelerias" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
+          <li><a href="#acercade" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
         </ul>
       </aside>
 
@@ -53,7 +53,7 @@
                   <div class="panel-heading">Tabla de Resultados</div>
                   <div class="panel-body">
                     <form>
-                      <div class="row">
+                      <!-- <div class="row"> -->
                         <div class="row">
                           <div class="group">      
                             <input type="text" required>
@@ -77,47 +77,49 @@
                           </div>  
 
                           <div class="group">      
-                            <input type="date" value="<?php echo date("d/m/Y"); ?>" required>
+                            <input type='text'  id='datetimepicker1' />
                             <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label>Fecha</label>  
-                          </div><br><br>
+                            <span class="bar"></span><br>
+                            <label>Fecha Inicial</label>
+                          </div> 
                         </div>
 
                         <div class="row">
-                          <div class="group">      
-                            <input type="text" required>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label>Sentencia</label>
-                          </div>  
-
-                          <div class="group">      
-                              <div class="radio">
-                                
-                               <div>
-                                  <input type="radio" name="sexo" id="hombre" checked="selected"><br>
-                                  <label for="hombre" class="input-radio">Todos</label>
-                               </div>
-                                
-                                <div>
-                                  <label for="mujer" class="input-radio">M</label>
-                                  <input type="radio" name="sexo" id="mujer"> <br>  
-                                </div>
-
-                                <div>
-                                  <label for="alien" class="input-radio">X</label>
-                                  <input type="radio" name="sexo" id="alien">
-                                </div>
-                                
+                            <div class="col-md-4">
+                              <div class="group new-ancho">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Sentencia</label>
                               </div>
-                          </div>  
+                            </div>
 
-                          <div class="group left">      
-                            <button class="btn btn-primary adicional">Buscar</button>
-                          </div>  
+                            <div class="col-md-5">
+                              <div class="radio">
+                                 <div class="col-md-4">
+                                    <input type="radio" name="sexo" id="hombre" checked="selected">
+                                    <p class="input-op">Todos</p>
+                                 </div>
+                                  
+                                  <div class="col-md-4">
+                                    <input type="radio" name="sexo" id="mujer">
+                                    <p class="input-op">M</p> 
+                                  </div>
+
+                                  <div class="col-md-4">
+                                    <input type="radio" name="sexo" id="alien">
+                                    <p class="input-op">X</p>
+                                  </div>
+                                  
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                              <button class="btn btn-primary adicional">Buscar</button>
+                            </div> 
+                          </div>
                         </div>
-                      </div>  
+                      <!-- </div>   -->
                     </form>
                   </div>
                 </div>
@@ -340,6 +342,57 @@
           </section>
            
           <section class="tab-pane fade" id="mail">  </section>
+
+          <section class="tab-pane fade in content" id="utelerias">
+            <div class="row">              
+              <div class="col-xs-12 col-sm-9 col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Opciones BD</div>
+                  <div class="panel-body">
+                    <div class="col-md-3">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      <h2>Respaldo BD</h2>
+                    </div>
+                    <div class="col-md-3">
+                      <i class="fa fa-database" aria-hidden="true"></i>
+                      <h2>Restaurar BD</h2></div>
+                    <div class="col-md-3">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      <h2>Usuario</h2>
+                    </div>
+                    <div class="col-md-3">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                      <h2>Configuraciones</h2>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END row -->
+           </section> <!-- END tab-pane -->
+
+           <section class="tab-pane fade in content" id="acercade">
+            <div class="row">              
+              <div class="col-xs-12 col-sm-9 col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Equipo de Desarrollo</div>
+                  <div class="panel-body">
+                    <div class="col-md-4">
+                      <i class="fa fa-user-o" aria-hidden="true"></i>
+                      <h2>Juan</h2>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="fa fa-user-o" aria-hidden="true"></i>
+                      <h2>Pedro</h2>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="fa fa-user-o" aria-hidden="true"></i>
+                      <h2>Miguel</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- END row -->
+           </section> <!-- END tab-pane -->
         </section>  <!-- END tab-content -->
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
@@ -347,5 +400,19 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/general.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker.es.js"></script>
+     <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+            $('#datetimepicker2').datetimepicker();
+            $('#datetimepicker3').datetimepicker();
+            $('#datetimepicker4').datetimepicker();
+        });
+
+         $(function() {
+          $('#toggle-one').bootstrapToggle();
+        })
+    </script>
   </body>
 </html>

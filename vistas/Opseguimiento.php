@@ -49,93 +49,182 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Busqueda Clientes</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo Cliente</span></a></li>
+                <li class="active"><a href="#todos" data-toggle="tab"><i class="fa fa-code"></i> <span>Todos</span></a></li>
+                <li><a href="#prointernos" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Proyecto Internos</span></a></li>
+                <li><a href="#proexternos" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Proyecto Internos</span></a></li>
+                <li><a href="#mistareas" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Mis Tareas</span></a></li>
               </ul>
             </nav>
               
             <section class="tab-content content">
-              <section class="tab-pane active fade in" id="access">
-                <div class="row">
-                  <div class="col-xs-6 col-sm-3 col-md-9 col-center">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
-                      <div class="panel-body">
-                        <form>
-                          <div class="row">
-                            <div class="row">
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nombre</label>
-                              </div>
-
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Email</label>
-                              </div>  
-
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>R.F.C</label>
-                              </div>  
-
-                              <div class="group">      
-                                <input type="date" value="" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Teléfono</label>  
-                              </div><br><br>
-                            </div>
-
-                            <div class="row">
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Dirección</label>
-                              </div>  
-
-                              <div class="group left">      
-                                <button class="btn btn-primary adicional">Buscar</button>
-                              </div>  
-                            </div>
-                          </div>  
-                        </form>
-                      </div>
-                    </div>
+              <section class="tab-pane active fade in" id="todos">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3>Proyectos <span class="badge">Cant:0</span>
+                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
+                        <span class="caret"></span>
+                      </button>
+                    </h3>
                   </div>
-              
-                  <div class="col-xs-12 col-sm-9 col-md-12">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
-                      <div class="panel-body">
-                        <table class="table table-striped table-hover">
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="container">
+                      <div class="input-group">
+                      <input type="text" class="">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-striped">
                           <thead>
                             <tr class="table-color">
-                            <th>#</th>
-                            <th>Nombre Cliente</th>
-                            <th>RFC</th>
-                            <th>Telefono</th>
-                            <th>Email</th>
-                            <th>Dirección</th>
-                            <th>Opciones</th>
-                          </tr>
+                              <th>Fecha</th>
+                              <th>Titulo</th>
+                            </tr>
                           </thead>
                           <tbody>
                             <tr class="text-left">
-                              <td>1</td>
-                              <td>Jhon Doe</td>
-                              <td>12312312312</td>
-                              <td>9992786534</td>
-                              <td>rh@hotmail.com</td>
-                              <td>Calle 16, Col. Yucatan</td>
-                              <td>Eliminar</td>
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>Mostrando: 0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+              </section>  <!-- END tab-pane -->
+
+              <section class="tab-pane  fade in" id="prointernos">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3>Proyectos <span class="badge">Cant:0</span>
+                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
+                        <span class="caret"></span>
+                      </button>
+                    </h3>
+                  </div>
+                  <div class="container">
+                      <div class="input-group">
+                      <input type="text" class="">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr class="table-color">
+                              <th>Fecha</th>
+                              <th>Titulo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>Mostrando: 0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+              </section>  <!-- END tab-pane -->
+
+              <section class="tab-pane  fade in" id="proexternos">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <h3>Proyectos <span class="badge">Cant:0</span>
+                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
+                        <span class="caret"></span>
+                      </button>
+                    </h3>
+                  </div>
+                  <div class="container">
+                      <div class="input-group">
+                      <input type="text" class="">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr class="table-color">
+                              <th>Fecha</th>
+                              <th>Titulo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>Mostrando: 0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+              </section>  <!-- END tab-pane -->
+
+              <section class="tab-pane  fade in" id="mistareas">
+                 <div class="row">
+                  <div class="col-xs-12 col-sm-9 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Proyectos Responsable</div>
+                      <div class="panel-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr class="table-color">
+                              <th>Fecha</th>
+                              <th>Titulo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>Mostrando: 0</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-9 col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Tareas Asignadas</div>
+                      <div class="panel-body">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr class="table-color">
+                              <th>Fecha</th>
+                              <th>Titulo</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>0</td>
+                              <td>0</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>Mostrando: 0</td>
                             </tr>
                           </tbody>
                         </table>
@@ -145,134 +234,7 @@
                 </div> <!-- END row -->
               </section>  <!-- END tab-pane -->
               
-              <section class="tab-pane fade in content" id="roles">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">Ingresar Clientes</div>
-                      <div class="panel-body">
-                        <form>
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>RFC</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Colonia</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Código Postal</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Calle/Av/Carretera</label>
-                                </div> 
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nombre Cliente</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Núm. Interior</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Núm. Exterior</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Cruzamientos</label>
-                                </div> 
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Telefono</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Estado</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Municipio</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Ciudad</label>
-                                </div> 
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Correo</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7 right">
-                              <br>
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Enviar</button>
-                              </div>
-
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Cancelar</button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-              </section>
+             
             </section>  <!-- END tab-content -->
           </section> <!-- END tab-pane -->
         </section>  <!-- END tab-content -->
