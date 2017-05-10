@@ -98,19 +98,18 @@
 
                             <div class="row">
                               <div class="group">      
-                                  <input type='text'  id='datetimepicker1' />
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span><br>
-                                  <label>Fecha Inicial</label>
-                                  
-                              </div>  
-                              
-                              <div class="group">      
-                                <input type='text'  id='datetimepicker2' />
+                                <input  type="text" id="example1">
                                 <span class="highlight"></span>
                                 <span class="bar"></span><br>
-                                <label>Fecha Inicial</label>
+                                <label>Fecha</label>
                               </div> 
+                              
+                              <div class="group">      
+                                <input  type="text" id="example2">
+                                <span class="highlight"></span>
+                                <span class="bar"></span><br>
+                                <label>Fecha</label>
+                              </div>  
 
                               <div class="group left">      
                                 <button class="btn btn-primary adicional">Buscar</button>
@@ -202,27 +201,23 @@
 
                           <div class="row">
                              <div class="group">      
-                                <input type='text'  id='datetimepicker3' />
+                                <input  type="text" id="example1">
                                 <span class="highlight"></span>
                                 <span class="bar"></span><br>
-                                <label>Fecha Inicial</label>
-                              </div>
+                                <label>Fecha</label>
+                              </div> 
 
                               <div class="group">      
-                                <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
-                                <div class="col-sm-6">
-                                  <input id="toggle-one" checked type="checkbox">
-                                    <script>
-                                      $(function() {
-                                        $('#toggle-one').bootstrapToggle();
-                                      })
-                                    </script>
-                                </div>
-                              </div><br><br>
-                          </div>
+                                <!-- <div class="form-group"> -->
+                                  <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
+                                  <div class="col-sm-6">
+                                    <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
+                                  </div>
+                                <!-- </div> -->
+                              </div>
                                   
-                          <div class="row">
-                            <div class="col-md-7 right">
+                          <!-- <div class="row"> -->
+                            <div class="group">
                               <br>
                               <div class="group b">      
                                 <button class="btn btn-primary adicional">Enviar</button>
@@ -303,12 +298,12 @@
                             <div class="row">
                               <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
                               <div class="col-sm-6">
-                                <input id="toggle-one" checked type="checkbox">
+                                <!-- <input id="toggle-one" checked type="checkbox">
                                   <script>
                                     $(function() {
                                       $('#toggle-one').bootstrapToggle();
                                     })
-                                  </script>
+                                  </script> -->
                               </div>
                             </div>
                           </div>
@@ -387,11 +382,11 @@
                               <label for="esInterno" class="control-label col-sm-2">Tiene Subtareas</label>
                               <div class="col-sm-6">
                                 <input id="toggle-one" checked type="checkbox">
-                                  <script>
+                                  <!-- <script>
                                     $(function() {
                                       $('#toggle-one').bootstrapToggle();
                                     })
-                                  </script>
+                                  </script> -->
                               </div>
                             </div>
                           </div>
@@ -421,22 +416,22 @@
     </article>  <!-- END wrapper -->
 
         
-    <script src="../js/jquery.js"></script>
     <script src="../js/general.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../js/bootstrap-datetimepicker.es.js"></script>
      <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker1').datetimepicker();
-            $('#datetimepicker2').datetimepicker();
-            $('#datetimepicker3').datetimepicker();
-            $('#datetimepicker4').datetimepicker();
-        });
+      // When the document is ready
+      $(document).ready(function () {
+          $('#example1').datepicker({
+              format: "dd/mm/yyyy"
+          });  
 
-         $(function() {
-          $('#toggle-one').bootstrapToggle();
-        })
+          $('#example2').datepicker({
+              format: "dd/mm/yyyy"
+          });
+
+           $('#example3').datepicker({
+              format: "dd/mm/yyyy"
+          });
+      });
     </script>
   </body>
 </html>

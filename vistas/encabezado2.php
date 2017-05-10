@@ -11,10 +11,15 @@
 		<meta name="description" content="Tus impuestos y contabilidad online, sin complicaciones.">
 		<link rel="stylesheet" href="../css/bootstrap.css">
 		<link rel="stylesheet" href="../css/iconos.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-toggle.min.css">
 		<link rel="stylesheet" href="../css/estilos.css">
+		<link rel="stylesheet" href="../css/datepicker.css">
 		<link rel="stylesheet" href="../css/estilosn.css">
-		<link rel="stylesheet" href="../css/responsivo.css">
-		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<!-- <link rel="stylesheet" href="../css/responsivo.css"> -->
+		<script src="../js/bootstrap-toggle.min.js"></script>
+		<script src="../js/bootstrap-datetimepicker.js"></script>
+    	<!-- <script src="../js/bootstrap-datetimepicker.es.js"></script> -->
 		<!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed" rel="stylesheet"> -->
 	</head>

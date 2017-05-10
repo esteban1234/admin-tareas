@@ -77,10 +77,10 @@
                           </div>  
 
                           <div class="group">      
-                            <input type='text'  id='datetimepicker1' />
+                            <input  type="text" id="example1">
                             <span class="highlight"></span>
                             <span class="bar"></span><br>
-                            <label>Fecha Inicial</label>
+                            <label>Fecha</label>
                           </div> 
                         </div>
 
@@ -397,22 +397,26 @@
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
 
-    <script src="../js/jquery.js"></script>
+    
     <script src="../js/general.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../js/bootstrap-datetimepicker.es.js"></script>
-     <script type="text/javascript">
+    
+    <!--  <script type="text/javascript">
         $(function () {
-            $('#datetimepicker1').datetimepicker();
-            $('#datetimepicker2').datetimepicker();
-            $('#datetimepicker3').datetimepicker();
-            $('#datetimepicker4').datetimepicker();
+
         });
 
          $(function() {
           $('#toggle-one').bootstrapToggle();
         })
+    </script> -->
+
+    <script type="text/javascript">
+      // When the document is ready
+      $(document).ready(function () {
+          $('#example1').datepicker({
+              format: "dd/mm/yyyy"
+          });  
+      });
     </script>
   </body>
 </html>
