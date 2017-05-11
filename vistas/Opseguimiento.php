@@ -102,9 +102,11 @@
                 <div class="panel">
                   <div class="panel-heading">
                     <h3>Proyectos <span class="badge">Cant:0</span>
-                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
+                    <a href="#" data-toggle="collapse" data-target="#collapse" class="btn btn-large btn-primary pull-right">
+                      <!-- <button > -->
                         <span class="caret"></span>
-                      </button>
+                      <!-- </button> -->
+                    </a>
                     </h3>
                   </div>
                   <div class="container">
@@ -241,8 +243,6 @@
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
 
-    <script src="../js/jquery.js"></script>
     <script src="../js/general.js"></script>
-    <script src="../js/bootstrap.js"></script>
   </body>
 </html>

@@ -15,12 +15,15 @@
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/datepicker.css">
 		<link rel="stylesheet" href="../css/estilosn.css">
+		<link rel="stylesheet" href="../css/fileinput.min.css">
 		<script src="../js/jquery.js"></script>
 		<script src="../js/bootstrap.js"></script>
 		<!-- <link rel="stylesheet" href="../css/responsivo.css"> -->
 		<script src="../js/bootstrap-toggle.min.js"></script>
 		<script src="../js/bootstrap-datetimepicker.js"></script>
-		<script src="../js/bootstrap-filestyle.min.js"></script>
+		<!-- <script src="../js/locales/es.js"></script> -->
+		<script src="../js/fileinput.js"></script>
+
 		
     	<!-- <script src="../js/bootstrap-datetimepicker.es.js"></script> -->
 		<!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed" rel="stylesheet"> -->

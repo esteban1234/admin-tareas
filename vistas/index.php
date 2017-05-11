@@ -50,7 +50,7 @@
             <div class="row">
               <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                 <div class="panel panel-default">
-                  <div class="panel-heading">Tabla de Resultados</div>
+                  <div class="panel-heading">Filtrar Logs</div>
                   <div class="panel-body">
                     <form>
                       <!-- <div class="row"> -->
@@ -127,7 +127,7 @@
               
               <div class="col-xs-12 col-sm-9 col-md-12">
                 <div class="panel panel-default">
-                  <div class="panel-heading">Tabla de Resultados</div>
+                  <div class="panel-heading">Resultados Logs</div>
                   <div class="panel-body">
                     <table class="table table-striped table-hover">
                       <thead>
@@ -409,13 +409,16 @@
                   <h4 class="modal-title">Cargar archivo</h4>
                 </div>
                 <div class="modal-body">
-                  <form action="#" id="respaldar-form">
+                  <!-- <form action="#" id="respaldar-form"> -->
                       <!-- <input id="file" type="file" class="filestyle" accept=".sql" required/><br><br> -->
                       <!-- <input type="file" class="filestyle" > -->
-                      <input type="file" class="filestyle" data-buttonText="Buscar Documento"><br><br>
+                      <!-- <input type="file" class="filestyle" data-buttonText="Buscar Documento"><br><br> -->
+                      <div class="form-group">
+                        <input id="file-1" type="file" class="file btn-primary" multiple=true data-preview-file-type="any">
+                      </div>
                       <a href="#" class="btn btn-primary btn-color" id="subir">Subir</a>
                       <br>
-                  </form>
+                  <!-- </form> -->
                 </div>
               </div>
             </div>
@@ -496,6 +499,5 @@
           });  
       });
     </script>
-    
   </body>
 </html>

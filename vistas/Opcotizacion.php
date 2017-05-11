@@ -235,7 +235,7 @@
                 <div class="panel">
                   <div class="panel-heading">
                     <h3>Cotización/Proyecto
-                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
+                        <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
                         <span class="caret"></span>
                       </button>
                     </h3>
@@ -298,7 +298,12 @@
                             <div class="row">
                               <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
                               <div class="col-sm-6">
-                                
+                                <!-- <input id="toggle-one" checked type="checkbox">
+                                  <script>
+                                    $(function() {
+                                      $('#toggle-one').bootstrapToggle();
+                                    })
+                                  </script> -->
                               </div>
                             </div>
                           </div>

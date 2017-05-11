@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Busqueda Clientes</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo Cliente</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Clientes</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo</span></a></li>
               </ul>
             </nav>
               
@@ -59,7 +59,7 @@
                 <div class="row">
                   <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
+                      <div class="panel-heading">Filtrar Clientes</div>
                       <div class="panel-body">
                         <form>
                           <div class="row">
@@ -113,7 +113,7 @@
               
                   <div class="col-xs-12 col-sm-9 col-md-12">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
+                      <div class="panel-heading">Resultados Clientes</div>
                       <div class="panel-body">
                         <table class="table table-striped table-hover">
                           <thead>
