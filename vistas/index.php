@@ -410,7 +410,9 @@
                 </div>
                 <div class="modal-body">
                   <form action="#" id="respaldar-form">
-                      <input id="file" type="file" class="filestyle" data-input="false" accept=".sql" required/><br>
+                      <!-- <input id="file" type="file" class="filestyle" accept=".sql" required/><br><br> -->
+                      <!-- <input type="file" class="filestyle" > -->
+                      <input type="file" class="filestyle" data-buttonText="Buscar Documento"><br><br>
                       <a href="#" class="btn btn-primary btn-color" id="subir">Subir</a>
                       <br>
                   </form>
@@ -494,5 +496,6 @@
           });  
       });
     </script>
+    
   </body>
 </html>

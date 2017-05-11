@@ -298,12 +298,7 @@
                             <div class="row">
                               <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
                               <div class="col-sm-6">
-                                <!-- <input id="toggle-one" checked type="checkbox">
-                                  <script>
-                                    $(function() {
-                                      $('#toggle-one').bootstrapToggle();
-                                    })
-                                  </script> -->
+                                
                               </div>
                             </div>
                           </div>
