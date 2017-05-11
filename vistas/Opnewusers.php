@@ -129,106 +129,16 @@
                       <div class="panel-body">
                         <form>
                           <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                               <div class="group group-newancho">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>RFC</label>
+                                <label>Nombre</label>
                               </div>
                             </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Colonia</label>
-                              </div>
 
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Código Postal</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Calle/Av/Carretera</label>
-                                </div> 
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nombre Cliente</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Núm. Interior</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Núm. Exterior</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Cruzamientos</label>
-                                </div> 
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Telefono</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Estado</label>
-                              </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Municipio</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Ciudad</label>
-                                </div> 
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                               <div class="group group-newancho">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
@@ -236,16 +146,34 @@
                                 <label>Correo</label>
                               </div>
                             </div>
-                            <div class="col-md-7 right">
-                              <br>
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Enviar</button>
+                            
+                            <div class="col-md-3">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Usuario</label>
                               </div>
+                            </div>
 
-                              <div class="group b">
-                                <a href="#" class="btn btn-primary adicional">Cancelar</a>   
-                                <!-- <button class="btn btn-primary adicional">Cancelar</button> -->
+                            <div class="col-md-3">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Clave</label>
                               </div>
+                            </div> 
+                          </div>
+
+                          <div class="row">
+                              <br>
+                            <div class="group">      
+                              <button class="btn btn-primary adicional">Enviar</button>
+                            </div>
+
+                            <div class="group">
+                              <a href="#" class="btn btn-primary adicional">Cancelar</a>   
                             </div>
                           </div>
                         </form>

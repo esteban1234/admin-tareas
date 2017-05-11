@@ -350,25 +350,74 @@
                   <div class="panel-heading">Opciones BD</div>
                   <div class="panel-body">
                     <div class="col-md-3">
-                      <i class="fa fa-download" aria-hidden="true"></i>
-                      <h2>Respaldo BD</h2>
+                      <a href="#">
+                        <div class="thumbnail text-center text-primary">
+                          <div class="img-responsive img-redondo icon-size"><i class="fa fa-download" aria-hidden="true"></i></div>
+                          <div class="caption profile">
+                            <h3>Respaldo BD</h3>
+                          </div>
+                        </div>
+                      </a>
                     </div>
+                   
                     <div class="col-md-3">
-                      <i class="fa fa-database" aria-hidden="true"></i>
-                      <h2>Restaurar BD</h2></div>
-                    <div class="col-md-3">
-                      <i class="fa fa-users" aria-hidden="true"></i>
-                      <h2>Usuario</h2>
+                      <a href="#" data-toggle="modal" data-target="#myModal2">
+                        <div class="thumbnail text-center text-primary">
+                          <div class="img-responsive img-redondo icon-size"><i class="fa fa-database" aria-hidden="true"></i></div>
+                          <div class="caption profile">
+                            <h3>Restaurar BD</h3>
+                          </div>
+                        </div>
+                      </a>
                     </div>
+
                     <div class="col-md-3">
-                      <i class="fa fa-cog" aria-hidden="true"></i>
-                      <h2>Configuraciones</h2>
-                      </div>
+                      <a href="Opnewusers.php">
+                        <div class="thumbnail text-center text-primary">
+                          <div class="img-responsive img-redondo icon-size"><i class="fa fa-users" aria-hidden="true"></i></div>
+                          <div class="caption profile">
+                            <h3>Usuario</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-md-3">
+                      <a href="#">
+                        <div class="thumbnail text-center text-primary">
+                          <div class="img-responsive img-redondo icon-size"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                          <div class="caption profile">
+                            <h3>Configuraciones</h3>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div> <!-- END row -->
            </section> <!-- END tab-pane -->
+          
+          <!-- LLAMAR AL MODAL DE RESTAURAR BD -->
+          <div class="modal fade" id="myModal2" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div type="button" class="close" data-dismiss="modal">&times;</div>
+                  <h4 class="modal-title">Cargar archivo</h4>
+                </div>
+                <div class="modal-body">
+                  <form action="#" id="respaldar-form">
+                      <input id="file" type="file" class="filestyle" data-input="false" accept=".sql" required/><br>
+                      <a href="#" class="btn btn-primary btn-color" id="subir">Subir</a>
+                      <br>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
            <section class="tab-pane fade in content" id="acercade">
             <div class="row">              
@@ -377,16 +426,43 @@
                   <div class="panel-heading">Equipo de Desarrollo</div>
                   <div class="panel-body">
                     <div class="col-md-4">
-                      <i class="fa fa-user-o" aria-hidden="true"></i>
-                      <h2>Juan</h2>
+                      <div class="card">
+                        <img src="../img/font-login.jpg" alt="John" style="width:100%; height: 200px">
+                        <h3>ISC. Noel Aguilar</h3>
+                        <p class="title">Lider de Proyecto</p>
+                        <p><i class="fa fa-envelope-open" aria-hidden="true"></i> naguilar@quantto.com.mx</p>
+                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <p><button><br></button></p>
+                      </div>
                     </div>
                     <div class="col-md-4">
-                      <i class="fa fa-user-o" aria-hidden="true"></i>
-                      <h2>Pedro</h2>
+                      <div class="card">
+                        <img src="../img/font-login.jpg" alt="John" style="width:100%; height: 200px">
+                        <h3>ISC. César Couoh</h3>
+                        <p class="title">Desarrollador</p>
+                        <p><i class="fa fa-envelope-open" aria-hidden="true"></i> cesar.couoh@quantto.com.mx</p>
+                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <p><button><br></button></p>
+                      </div>
                     </div>
                     <div class="col-md-4">
-                      <i class="fa fa-user-o" aria-hidden="true"></i>
-                      <h2>Miguel</h2>
+                      <div class="card">
+                        <img src="../img/font-login.jpg" alt="John" style="width:100%; height: 200px">
+                        <h3>ISC. Armando Espinosa</h3>
+                        <p class="title">Desarrollador</p>
+                        <p><i class="fa fa-envelope-open" aria-hidden="true"></i> armando.espinosa@quantto.com.mx</p>
+                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <p><button><br></button></p>
+                      </div>
                     </div>
                   </div>
                 </div>
