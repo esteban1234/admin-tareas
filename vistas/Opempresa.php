@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Busqueda Empresas</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nueva Empresa</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-university" aria-hidden="true"></i> <span>Empresas</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-plus-circle" aria-hidden="true"></i> <span> Nueva</span></a></li>
               </ul>
             </nav>
               
@@ -135,12 +135,6 @@
                         <form>
                           <div class="row">
                             <div class="col-md-5">
-                              <div class="form-group">
-                                <!-- <label class="control-label">A file upload button without icon</label> -->
-                                <input type="file" class="filestyle" data-icon="false">
-                              </div>
-                            </div>
-                            <div class="col-md-7">
                               <div class="group group-newancho">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
@@ -266,6 +260,12 @@
                               <div class="group b">      
                                 <button class="btn btn-primary adicional">Cancelar</button>
                               </div>
+                            </div>
+                          </div><br>
+
+                          <div class="row">
+                            <div class="col-md-5">
+                              <input id="file-1" type="file" class="file btn-primary" multiple=true data-preview-file-type="any">
                             </div>
                           </div>
                         </form>

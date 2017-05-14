@@ -36,10 +36,10 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li class="active"><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="#dashboard" data-toggle="tab"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
           <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
-          <li><a href="#utelerias" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
+          <li class="active"><a href="#utelerias" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
           <li><a href="#acercade" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
         </ul>
       </aside>
@@ -103,12 +103,12 @@
                                   
                                   <div class="col-md-4">
                                     <input type="radio" name="sexo" id="mujer">
-                                    <p class="input-op">M</p> 
+                                    <p class="input-op"><i class="fa fa-check" aria-hidden="true"></i></p> 
                                   </div>
 
                                   <div class="col-md-4">
                                     <input type="radio" name="sexo" id="alien">
-                                    <p class="input-op">X</p>
+                                    <p class="input-op"><i class="fa fa-times" aria-hidden="true"></i></p>
                                   </div>
                                   
                                 </div>
@@ -383,7 +383,7 @@
                     </div>
 
                     <div class="col-md-3">
-                      <a href="#">
+                      <a href="opconfiguracion.php">
                         <div class="thumbnail text-center text-primary">
                           <div class="img-responsive img-redondo icon-size"><i class="fa fa-cog" aria-hidden="true"></i></div>
                           <div class="caption profile">
@@ -414,7 +414,7 @@
                       <!-- <input type="file" class="filestyle" > -->
                       <!-- <input type="file" class="filestyle" data-buttonText="Buscar Documento"><br><br> -->
                       <div class="form-group">
-                        <input id="file-1" type="file" class="file btn-primary" multiple=true data-preview-file-type="any">
+                        <input id="file-1" type="file" class="file btn-primary" multiple=true data-preview-file-type="any" accept=".sql">
                       </div>
                       <a href="#" class="btn btn-primary btn-color" id="subir">Subir</a>
                       <br>
@@ -428,7 +428,11 @@
             <div class="row">              
               <div class="col-xs-12 col-sm-9 col-md-12">
                 <div class="panel panel-default">
-                  <div class="panel-heading">Equipo de Desarrollo</div>
+                  <div class="panel-heading">Equipo de Desarrollo
+                    <div class="pull-right">
+                      Nombre del Software <span class="version">versión 1.0</span>
+                    </div>
+                  </div>
                   <div class="panel-body">
                     <div class="col-md-4">
                       <div class="card">
@@ -436,10 +440,10 @@
                         <h3>ISC. Noel Aguilar</h3>
                         <p class="title">Lider de Proyecto</p>
                         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> naguilar@quantto.com.mx</p>
-                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                       <!--  <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
-                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a>  -->
                         <p><button><br></button></p>
                       </div>
                     </div>
@@ -449,10 +453,10 @@
                         <h3>ISC. César Couoh</h3>
                         <p class="title">Desarrollador</p>
                         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> cesar.couoh@quantto.com.mx</p>
-                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <!-- <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
-                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a>  -->
                         <p><button><br></button></p>
                       </div>
                     </div>
@@ -462,10 +466,10 @@
                         <h3>ISC. Armando Espinosa</h3>
                         <p class="title">Desarrollador</p>
                         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> armando.espinosa@quantto.com.mx</p>
-                        <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <!-- <a class="icon-perfil" href="#"><i class="fa fa-dribbble"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-twitter"></i></a> 
                         <a class="icon-perfil" href="#"><i class="fa fa-linkedin"></i></a> 
-                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a> 
+                        <a class="icon-perfil" href="#"><i class="fa fa-facebook"></i></a>  -->
                         <p><button><br></button></p>
                       </div>
                     </div>
@@ -480,16 +484,6 @@
 
     
     <script src="../js/general.js"></script>
-    
-    <!--  <script type="text/javascript">
-        $(function () {
-
-        });
-
-         $(function() {
-          $('#toggle-one').bootstrapToggle();
-        })
-    </script> -->
 
     <script type="text/javascript">
       // When the document is ready

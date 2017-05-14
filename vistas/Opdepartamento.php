@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Busqueda Departamentos</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo Departamento</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Departamentos</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo</span></a></li>
               </ul>
             </nav>
               
@@ -59,7 +59,7 @@
                 <div class="row">
                   <div class="col-xs-6 col-sm-3 col-md-12 col-center">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
+                      <div class="panel-heading">Filtrar Departamentos</div>
                       <div class="panel-body">
                         <form>
                           <div class="row">
@@ -90,7 +90,7 @@
               
                   <div class="col-xs-12 col-md-12">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Tabla de Resultados</div>
+                      <div class="panel-heading">Resultado Departamentos</div>
                       <div class="panel-body">
                         <table class="table table-striped table-hover">
                           <thead>

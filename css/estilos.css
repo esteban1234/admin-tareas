@@ -410,25 +410,13 @@ input:focus ~ .highlight, select:focus ~ .highlight {
     font-size: 18px;
 }
 
-/*button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #2A3F54 ;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}*/
+
 
 .icon-perfil {
     text-decoration: none;
     font-size: 22px;
     color: black;
 }
-
 
 .icon-size i{
   font-size: 60px;
@@ -449,3 +437,16 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   background-color: #2A3F54 ;
 }
 
+.version{
+  color: #76B1AC;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.color-border{
+  border: 2px solid red;
+}
+
+.interno{
+  margin-left: 15%;
+}

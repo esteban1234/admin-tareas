@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i> <span>Tarea</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><span>+ <i class="fa fa-book" aria-hidden="true"></i> Nueva</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Configuraciones</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>Empresas</span></a></li>
               </ul>
             </nav>
               
@@ -59,34 +59,32 @@
                 <div class="row">
                   <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Filtrar Tarea</div>
+                      <div class="panel-heading">Filtrar Configuraciones</div>
                       <div class="panel-body">
                         <form>
-                            <div class="group">      
-                              <input type="text" required>
-                              <span class="highlight"></span>
-                              <span class="bar"></span>
-                              <label>Nombre</label>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nombre</label>
+                              </div>
                             </div>
 
-                            <div class="group">      
-                              <input type="text" required>
-                              <span class="highlight"></span>
-                              <span class="bar"></span>
-                              <label>Descripcion</label>
-                            </div>  
-
-                            <div class="group">      
-                              <input type="text" required>
-                              <span class="highlight"></span>
-                              <span class="bar"></span>
-                              <label>Empresa</label>
+                            <div class="col-md-4">
+                              <div class="group group-newancho">      
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nivel</label>
+                              </div>
                             </div>  
 
                             <div class="group left">      
                               <button class="btn btn-primary adicional">Buscar</button>
-                            </div>  
-                          </div>  
+                            </div>
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -94,18 +92,16 @@
               
                   <div class="col-xs-12 col-sm-9 col-md-12">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Resultado Tareas</div>
+                      <div class="panel-heading">Resultados Configuraciones</div>
                       <div class="panel-body">
                         <table class="table table-striped table-hover">
                           <thead>
                             <tr class="table-color">
                             <th>#</th>
                             <th>Nombre</th>
-                            <th>Descripcion</th>
-                            <th>Empresa</th>
-                            <th>Costo</th>
-                            <th>Duración</th>
-                            <th>Rehusable</th>
+                            <th>Nivel</th>
+                            <th>Tipo</th>
+                            <th>Predeterminado</th>
                             <th>Opciones</th>
                           </tr>
                           </thead>
@@ -116,8 +112,6 @@
                               <td>12312312312</td>
                               <td>9992786534</td>
                               <td>rh@hotmail.com</td>
-                              <td>Calle 16, Col. Yucatan</td>
-                              <td>Calle 16, Col. Yucatan</td>
                               <td>Eliminar</td>
                             </tr>
                           </tbody>
@@ -128,78 +122,72 @@
                 </div> <!-- END row -->
               </section>  <!-- END tab-pane -->
               
-              <section class="tab-pane fade in content" id="roles">
+              <section class="tab-pane fade in" id="roles">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                     <div class="panel panel-default">
-                      <div class="panel-heading">Ingresar Clientes</div>
+                      <div class="panel-heading">Filtrar Empresas</div>
                       <div class="panel-body">
                         <form>
                           <div class="row">
-                            <div class="col-md-5">
-                              <div class="group group-newancho">
-                                <select name="" id="">
-                                  <option value="1">1</option>
-                                  <option value="1">2</option>
-                                </select>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Elige Empresa</label>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <div class="group group-newancho group-newancho-left">      
+                            <div class="col-md-4">
+                              <div class="group group-newancho">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Nombre</label>
                               </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Costo</label>
-                                </div>
-
-                                <div class="group group-newancho group-newancho-left">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Duración</label>
-                                </div> 
                             </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-5">
+
+                            <div class="col-md-4">
                               <div class="group group-newancho">      
-                                  <input type="text" required>
-                                  <span class="highlight"></span>
-                                  <span class="bar"></span>
-                                  <label>Descripción</label>
-                                </div>
-                            </div>
-                          </div><br>
-
-                          <div class="row">
-                            <div class="col-md-5 ">
-                                <label for="esInterno" class="interno">Es Interno</label>
-                                <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
-                            </div>
-                            <div class="col-md-7 right">
-                              <br>
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Enviar</button>
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nivel</label>
                               </div>
+                            </div>  
 
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Cancelar</button>
-                              </div>
+                            <div class="group left">      
+                              <button class="btn btn-primary adicional">Buscar</button>
                             </div>
                           </div>
                         </form>
                       </div>
                     </div>
-              </section>
+                  </div>
+              
+                  <div class="col-xs-12 col-sm-9 col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Resultados Empresas</div>
+                      <div class="panel-body">
+                        <table class="table table-striped table-hover">
+                          <thead>
+                            <tr class="table-color">
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Nivel</th>
+                            <th>Tipo</th>
+                            <th>Predeterminado</th>
+                            <th>Opciones</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="text-left">
+                              <td>1</td>
+                              <td>Jhon Doe</td>
+                              <td>12312312312</td>
+                              <td>9992786534</td>
+                              <td>rh@hotmail.com</td>
+                              <td>Eliminar</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- END row -->
+              </section>  <!-- END tab-pane -->              
             </section>  <!-- END tab-content -->
           </section> <!-- END tab-pane -->
         </section>  <!-- END tab-content -->

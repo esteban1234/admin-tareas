@@ -443,7 +443,7 @@
                 '    </div>\n' +
                 '</div>';
             tClose = '<div class="close fileinput-remove">&times;</div>\n';
-            tFileIcon = '<i class="glyphicon glyphicon-file kv-caption-icon"></i>';
+            tFileIcon = '<i class="fa fa-file-image-o" aria-hidden="true"></i> ';
             tCaption = '<div tabindex="500" class="form-control file-caption {class}">\n' +
                 '   <div class="file-caption-name"></div>\n' +
                 '</div>\n';
@@ -489,8 +489,8 @@
             //noinspection HtmlUnknownAttribute
             tActionDelete = '<button type="button" class="kv-file-remove {removeClass}" ' +
                 'title="{removeTitle}" {dataUrl}{dataKey}>{removeIcon}</button>\n';
-            tActionUpload = '<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">' +
-                '{uploadIcon}</button>';
+            // tActionUpload = '<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">' +
+            //     '{uploadIcon}</button>';
             tActionZoom = '<button type="button" class="kv-file-zoom {zoomClass}" ' +
                 'title="{zoomTitle}">{zoomIcon}</button>';
             tActionDrag = '<span class="file-drag-handle {dragClass}" title="{dragTitle}">{dragIcon}</span>';
@@ -631,14 +631,14 @@
                     uploadIcon: '<i class="glyphicon glyphicon-upload text-info"></i>',
                     uploadClass: 'btn btn-xs btn-default',
                     uploadTitle: 'Upload file',
-                    zoomIcon: '<i class="glyphicon glyphicon-zoom-in"></i>',
+                    zoomIcon: '<i class="fa fa-book" aria-hidden="true"></i>',
                     zoomClass: 'btn btn-xs btn-default',
-                    zoomTitle: 'View Details',
+                    zoomTitle: 'Detalle',
                     dragIcon: '<i class="glyphicon glyphicon-menu-hamburger"></i>',
                     dragClass: 'text-info',
                     dragTitle: 'Move / Rearrange',
                     dragSettings: {},
-                    indicatorNew: '<i class="glyphicon glyphicon-hand-down text-warning"></i>',
+                    indicatorNew: '<i class="fa fa-hourglass-half text-warning" aria-hidden="true"></i>',
                     indicatorSuccess: '<i class="glyphicon glyphicon-ok-sign text-success"></i>',
                     indicatorError: '<i class="glyphicon glyphicon-exclamation-sign text-danger"></i>',
                     indicatorLoading: '<i class="glyphicon glyphicon-hand-up text-muted"></i>',
@@ -1421,7 +1421,7 @@
                 $btnFull = $modal.find('.btn-fullscreen'), $btnBord = $modal.find('.btn-borderless'), cap, size,
                 $btnTogh = $modal.find('.btn-toggleheader'), $zoomPreview = self.$preview.find('#zoom-' + pid);
             tmplt = $zoomPreview.attr('data-template') || 'generic';
-            $content = $zoomPreview.find('.kv-file-content');
+            // $content = $zoomPreview.find('.kv-file-content');
             body = $content.length ? $content.html() : '';
             cap = $frame.data('caption') || '';
             size = $frame.data('size') || '';
@@ -3044,8 +3044,7 @@
                 'preview': preview,
                 'close': close,
                 'caption': caption,
-                'upload': self._renderButton('upload'),
-                'remove': self._renderButton('remove'),
+                // 'remove': self._renderButton('remove'),
                 'cancel': self._renderButton('cancel'),
                 'browse': self._renderButton('browse')
             });
@@ -3695,11 +3694,11 @@
         buttonLabelClass: 'hidden-xs',
         browseIcon: '<i class="fa fa-file" aria-hidden="true"></i>&nbsp;',
         browseClass: 'btn btn-primary',
-        removeIcon: '<i class="glyphicon glyphicon-trash"></i>',
+        removeIcon: '<i class="fa fa-times" aria-hidden="true"></i>',
         removeClass: 'btn btn-primary',
         cancelIcon: '<i class="glyphicon glyphicon-ban-circle"></i>',
         cancelClass: 'btn btn-primary',
-        uploadIcon: '<i class="fa fa-adjust" aria-hidden="true"></i>',
+        uploadIcon: '',
         uploadClass: 'btn btn-primary',
         uploadUrl: null,
         uploadAsync: true,
@@ -3752,9 +3751,9 @@
         filePlural: 'files',
         browseLabel: 'Buscar',
         removeLabel: 'Borrar',
-        removeTitle: 'Clear selected files',
+        removeTitle: 'Borrar Todo',
         cancelLabel: 'Cancel',
-        cancelTitle: 'Abort ongoing upload',
+        cancelTitle: 'Cancelar',
         uploadLabel: 'Actualiza',
         uploadTitle: 'Upload selected files',
         msgNo: 'No',

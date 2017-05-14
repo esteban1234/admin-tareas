@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Clientes</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-address-card" aria-hidden="true"></i> <span>Clientes</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user-plus" aria-hidden="true"></i> <span>Nuevo</span></a></li>
               </ul>
             </nav>
               
@@ -135,7 +135,9 @@
                               <td>9992786534</td>
                               <td>rh@hotmail.com</td>
                               <td>Calle 16, Col. Yucatan</td>
-                              <td>Eliminar</td>
+                              <td><a href="#" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a> 
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a>
+                              </td>
                             </tr>
                           </tbody>
                         </table>

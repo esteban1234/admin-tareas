@@ -38,7 +38,7 @@
         <ul class="sidebar-nav">
           <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li class="active"><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
-          <li><a href="#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
+          <li><a href="http://localhost/github/admin-tareas/vistas/index.php#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
           <li><a href="#mail" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
         </ul>
