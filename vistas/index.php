@@ -285,7 +285,8 @@
                           <div class="circle-tile">
                             <a href="#">
                               <div class="circle-tile-heading dark-blue">
-                                <i class="fa fa-users fa-fw fa-3x"></i>
+                              <i class="fa fa-check-square-o fa-fw fa-3x" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-users "></i> -->
                               </div>
                             </a>
                             <div class="circle-tile-content dark-blue">
@@ -300,7 +301,8 @@
                           <div class="circle-tile">
                             <a href="#">
                               <div class="circle-tile-heading green">
-                                <i class="fa fa-line-chart fa-fw fa-3x"></i>
+                                <i class="fa fa-line-chart fa-fw fa-3x" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-line-chart "></i> -->
                               </div>
                             </a>
                             <div class="circle-tile-content green">
