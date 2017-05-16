@@ -230,88 +230,7 @@
                       </div>
                     </div>
 
-                <div class="panel">
-                  <div class="panel-heading">
-                    <h3>Detalle
-                        <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
-                        <span class="caret"></span>
-                      </button>
-                    </h3>
-                  </div>
-                  <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                      <div id="crear_cotizacion">
-                        <div class="form-horizontal">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>RFC</label>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="col-md-2">
-                                <label for="descripcion" class="control-label">Descripcion</label>
-                              </div>
-                              <div class="col-md-10">
-                                <textarea class="form-control" id="descripcion" name="descripcion" rows="5"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <select name="" id="">
-                                  <option value="1">1</option>
-                                  <option value="1">2</option>
-                                </select>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Elige Empresa</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <input type='text'  id='datetimepicker4' />
-                                <span class="highlight"></span>
-                                <span class="bar"></span><br>
-                                <label>Fecha Inicial</label>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <select name="" id="">
-                                  <option value="1">1</option>
-                                  <option value="1">2</option>
-                                </select>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Elige Empresa</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
-                              <div class="col-sm-6">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel-footer">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <input type="button" class="btn btn-primary adicional" value="Guardar Cambios" id="btncrear">    
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+              
     <div class="panel">
       <div class="panel-heading">
         <h3>
@@ -323,28 +242,37 @@
       <div id="subtareas_proyecto">
         <!-- Aqui van a ir todos las tareas -->
 
-        <div class="panel" id="panel-149492323789">
-        <div class="panel-heading btn-color">
-        <div class="row">
-        <div class="col-sm-10">
-        <big><span aria-haspopup="true" aria-expanded="true" data-toggle="collapse" data-target="#detalle_149492323789" style="cursor:pointer;">
-        <span id="btn-collapse_149492323789" class="glyphicon glyphicon-chevron-right"></span>&nbsp;<strong id="titulo_149492323789">Nombre de la Tarea</strong>
-        </span></big>
-        </div>
-        <div class="col-md-2 col-sm-10">
-        <big><span class="label label-default col-md-offset-6 col-md-6 hidden" aria-haspopup="true" aria-expanded="true" data-toggle="collapse" id="subtareasstr_149492323789" data-target="#detalle_149492323789" style="cursor:pointer;">0 subtareas</span></big>
-        <div class="dropdown pull-right">
-        <big><span class="text-default"><strong>$ <span id="total_149492323789">0.00</span></strong></span></big>
-        <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="opciones_149492323789" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        <span class="glyphicon glyphicon-option-vertical"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <li><a href="#" id="eliminar_149492323789">Eliminar</a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
+        <div class="panel panel-primary design-panel" id="panel-149492323789">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-10">
+                <big class="pull-left">
+                  <span aria-haspopup="true" aria-expanded="true" data-toggle="collapse" data-target="#detalle_149492323789" style="cursor:pointer;">
+                    <i id="btn-collapse_149492323789" class="fa fa-arrows" aria-hidden="true"></i>&nbsp;
+                    <strong id="titulo_149492323789">Nombre de la Tarea</strong>
+                  </span>
+                </big>
+              </div>
+              <div class="col-md-2">
+                <big>
+                  <span class="label label-default hidden" aria-haspopup="true" aria-expanded="true" data-toggle="collapse" id="subtareasstr_149492323789" data-target="#detalle_149492323789" style="cursor:pointer;">0 subtareas
+                  </span>
+                </big>
+                <div class="dropdown pull-right">
+                  <big>
+                    <span class="text-default"><strong>$ <span id="total_149492323789">0.00</span></strong></span>
+                  </big>
+                  <button class="btn btn-primary btn-color dropdown-toggle btn-sm" type="button" id="opciones_149492323789" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#" id="eliminar_149492323789">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div id="detalle_149492323789" class="panel-collapse collapse in">
         <div class="panel-body form-horizontal">
         <form action="#detalle_149492323789" id="form_detalle_149492323789" method="post">
@@ -401,11 +329,14 @@
               <span class="bar"></span>
               <label>Elige Empresa</label>
             </div>
-          </div>
+          </div><br>
           <div class="row">
-            <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
-            <div class="col-sm-6">
-            </div>
+             <div class="col-md-7">
+                <div class="group design-interno">      
+                  <label for="esInterno" class="">Es Interno</label>
+                  <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
+                </div>
+              </div>
           </div>
         </div>
         </div>
@@ -414,40 +345,51 @@
         </form>
         <!-- <div id="subtareas_149492323789" class="hidden"></div> -->
         </div>
+          
         <div class="panel-footer">
-        <div class="btn-group">
-        <button type="submit" class="btn btn-success" id="btnGuardar_149492323789" title="Guardar"><i class="glyphicon glyphicon-saved"></i></button>
-        <a class="btn btn-primary hidden" id="btnAgregar_149492323789" title="Agregar Subtarea"><i class="glyphicon glyphicon-tasks"></i> <i class="glyphicon glyphicon-plus"></i></a>
+          <div class="row">
+            <div class="col-md-2">
+              <input type="button" class="btn btn-primary btn-color" value="Guardar Cambios" id="btncrear">    
+            </div>
+          </div>
         </div>
-        </div>
+
         </div>
         </div>
 
       </div>
-      </div>
-      <div class="panel-footer">
-        <div class="btn-group">
-          <a class="btn btn-primary hidden" id="btnAgregar_tarea" title="Agregar Subtarea"><i class="glyphicon glyphicon-tasks"></i> <i class="glyphicon glyphicon-plus"></i></a>
-        </div>
       </div>
     </div>
   </div>
-  <div class="panel panel-success">
-    <div class="panel-heading"><h3>Total Cotización/Proyecto<span class="label label-info pull-right" id="costo_proyecto">$ 0.00</span></h3></div>
-</div>
+  <div class="panel">
+    <div class="panel-heading">
+      <h3>Total Cotización/Proyecto<span class="label label-info pull-right" id="costo_proyecto">$ 0.00</span></h3>
+    </div>
+  </div>
 <form action="http://athlon.mx/proyecto/cotizacion/cotizar" method="POST" accept-charset="utf-8">
-<div class="panel panel-success">
-    <div class="panel-heading"><h3>Precio de Venta<span class="pull-right">$ <input type="text" class="input-sm" name="precioventa" id="precio_venta" value=""></span></h3></div>
-</div>
-</div>
-<div class="btn-group">
+  <div class="panel panel-back-color">
+    <div class="panel-heading">
+      <h3>Precio de Venta
+        <span class="pull-right">
+          <!-- <label for="basic-url">Your vanity URL</label> -->
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">$</span>
+            <!-- <input type="text" class="input-sm" name="precioventa" id="precio_venta" value=""> -->
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          </div>
+        </span>
+      </h3>
+    </div>
+  </div>
 
-                    <button type="submit" class="btn btn-success" id="btnGuardar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar</button>
-                <input type="hidden" name="aprueba"  id="aprueba" value="0">
-            <button type="submit" class="btn btn-warning" id="btnGuardarAprobar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar y aprobar</button>
-            <a class="btn btn-danger" id="btnSalir" href="http://athlon.mx/proyecto/cotizacion">Salir</a>
-
-        </div>
+  <div class="btn-group">
+    <button type="submit" class="btn btn-success" id="btnGuardar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>  Guardar
+    </button>
+    <input type="hidden" name="aprueba"  id="aprueba" value="0">
+    <button type="submit" class="btn btn-warning" id="btnGuardarAprobar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar y aprobar
+    </button>
+    <a class="btn btn-danger" id="btnSalir" href="http://athlon.mx/proyecto/cotizacion">Salir</a>
+  </div>
         </form>
 <div id="msg"></div>
     <div class="modal fade" id="myModal" role="dialog">

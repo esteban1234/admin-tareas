@@ -87,9 +87,35 @@
                               </div>
                             </div>
                           </div><br>
+
+                          <div class="row">
+                            <div class="col-md-4">
+                              <a href="#info1" class="btn btn-primary btn-color pull-left inf">Cambiar Clave</a>
+                            </div> 
+
+                            <div id="info1" class="col-md-8 oculto">
+                              <div class="col-md-6">
+                                <div class="group group-newancho">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Clave Nueva</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="group group-newancho">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>Confirmar Clave Nueva</label>
+                                </div>
+                              </div>
+                            </div>                       
+                          </div><br><br>
+
                           <div class="row">
                             <div class="group">      
-                                <button class="btn btn-primary adicional">Enviar</button>
+                                <button class="btn btn-primary adicional">Edita</button>
                               </div>
 
                               <div class="group">
@@ -108,9 +134,25 @@
       </section>  <!-- END main -->
     </article>  <!-- END wrapper -->
 
-    <script src="../js/jquery.js"></script>
+    <!-- <script src="../js/jquery.js"></script> -->
     <script src="../js/general.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        $(".oculto").hide();              
+          $(".inf").click(function(){
+                var nodo = $(this).attr("href");  
+       
+                if ($(nodo).is(":visible")){
+                     $(nodo).hide();
+                     return false;
+                }else{
+              $(".oculto").hide("slow");                             
+              $(nodo).fadeToggle("fast");
+              return false;
+                }
+          });
+      }); 
+    </script>
   </body>
 </html>
 

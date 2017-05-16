@@ -494,3 +494,21 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   width: 100%;
 }
 
+
+.inf{
+  margin-left: 2%;
+}
+
+.design-panel{
+  border-color: #76B1AC;
+}
+
+.design-panel .panel-heading {
+  color: #fff;
+  background-color: #76B1AC;
+  border-color: #76B1AC;
+}
+
+.panel-back-color{
+  background-color: #76B1AC;
+}
