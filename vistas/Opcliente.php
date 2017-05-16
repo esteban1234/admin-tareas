@@ -93,7 +93,7 @@
                               </div><br><br>
                             </div>
 
-                            <div class="row">
+                            <div class="row align-left">
                               <div class="group">      
                                 <input type="text" required>
                                 <span class="highlight"></span>
@@ -119,12 +119,12 @@
                           <thead>
                             <tr class="table-color">
                             <th>#</th>
-                            <th>Nombre Cliente</th>
-                            <th>RFC</th>
-                            <th>Telefono</th>
-                            <th>Email</th>
-                            <th>Dirección</th>
-                            <th>Opciones</th>
+                            <th><i class="fa fa-user-circle" aria-hidden="true"></i> Nombre Cliente</th>
+                            <th><i class="fa fa-id-card-o" aria-hidden="true"></i> RFC</th>
+                            <th><i class="fa fa-mobile" aria-hidden="true"></i> Telefono</th>
+                            <th><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Email</th>
+                            <th><i class="fa fa-map-o" aria-hidden="true"></i> Dirección</th>
+                            <th><i class="fa fa-wrench" aria-hidden="true"></i> Opciones</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -257,7 +257,7 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Correo</label>
+                                <label>Email</label>
                               </div>
                             </div>
                             <div class="col-md-7 right">

@@ -49,40 +49,38 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Departamentos</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nuevo</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-home" aria-hidden="true"></i> <span>Departamentos</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><span>+ Nuevo</span></a></li>
               </ul>
             </nav>
               
             <section class="tab-content content">
               <section class="tab-pane active fade in" id="access">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-3 col-md-12 col-center">
+                  <div class="col-xs-6 col-sm-3 col-md-9 col-center">
                     <div class="panel panel-default">
                       <div class="panel-heading">Filtrar Departamentos</div>
                       <div class="panel-body">
                         <form>
                           <div class="row">
-                            <div class="row">
-                              <div class="group">      
-                                <input type="text" required>
-                                 
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nombre</label><br>
-                              </div>
-
-                              <div class="group">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Empresa</label>
-                              </div>
-
-                               <div class="group left">      
-                                <button class="btn btn-primary adicional">Buscar</button>
-                              </div>
+                            <div class="group">      
+                              <input type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label>Nombre</label><br>
                             </div>
+
+                            <div class="group">      
+                              <input type="text" required>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label>Empresa</label>
+                            </div>
+
+                             <div class="group left">      
+                              <button class="btn btn-primary adicional">Buscar</button>
+                            </div>
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -97,8 +95,8 @@
                             <tr class="table-color">
                             <th>#</th>
                             <th>Nombre</th>
-                            <th>Empresa</th>
-                            <th>Opciones</th>
+                            <th><i class="fa fa-bar-chart" aria-hidden="true"></i> Empresa</th>
+                            <th><i class="fa fa-wrench" aria-hidden="true"></i> Opciones</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -106,7 +104,8 @@
                               <td>1</td>
                               <td>Jhon Doe</td>
                               <td>12312312312</td>
-                              <td>Eliminar</td>
+                              <td><a href="#" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a> 
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -126,12 +125,13 @@
                               <div class="group group-newancho">
                                 <!-- <input type="text" required> -->
                                 <select name="" id="">
+                                  <option value="0">Elige una Empresa</option>
                                   <option value="1">1</option>
                                   <option value="1">2</option>
                                 </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Elige Empresa</label>
+                                <label>Empresa</label>
                               </div>
                             </div>
                             <div class="col-md-6">
@@ -152,7 +152,7 @@
                               </div>
 
                               <div class="group b">      
-                                <button class="btn btn-primary adicional">Cancelar</button>
+                                <a href="#" class="btn btn-primary adicional">Restablecer</a>
                               </div>
                             </div>
                           </div>

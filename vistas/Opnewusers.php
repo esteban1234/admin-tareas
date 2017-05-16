@@ -101,10 +101,10 @@
                           <thead>
                             <tr class="table-color">
                             <th>#</th>
-                            <th>Nombre Completo</th>
-                            <th>Correo</th>
-                            <th>Usuario</th>
-                            <th>Opciones</th>
+                            <th>Nombres</th>
+                            <th><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Email</th>
+                            <th><i class="fa fa-user-circle" aria-hidden="true"></i> Nombre Usuario</th>
+                            <th><i class="fa fa-wrench" aria-hidden="true"></i> Opciones</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -113,7 +113,10 @@
                               <td>Jhon Doe</td>
                               <td>12312312312</td>
                               <td>9992786534</td>
-                              <td>Eliminar</td>
+                              <td>
+                              <a href="Oppermiso.php" class="hover"><i class="fa fa-check-square-o fa-2x" aria-hidden="true" title="Permisos"></i></a> 
+                              <a href="Opedita.php" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a>  
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -143,7 +146,7 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Correo</label>
+                                <label>Email</label>
                               </div>
                             </div>
                             

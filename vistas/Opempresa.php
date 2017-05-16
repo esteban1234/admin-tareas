@@ -101,12 +101,12 @@
                             <tr class="table-color">
                             <th>#</th>
                             <th>Logo</th>
-                            <th>Nombre Empresa</th>
+                            <th><i class="fa fa-font" aria-hidden="true"></i> Nombre</th>
                             <th>RFC</th>
-                            <th>Dirección</th>
-                            <th>Email</th>
-                            <th>Telefono</th>
-                            <th>Opciones</th>
+                            <th><i class="fa fa-map-o" aria-hidden="true"></i> Dirección</th>
+                            <th><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Email</th>
+                            <th><i class="fa fa-mobile" aria-hidden="true"></i>Telefono</th>
+                            <th><i class="fa fa-wrench" aria-hidden="true"></i> Opciones</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -118,7 +118,8 @@
                               <td>9992786534</td>
                               <td>rh@hotmail.com</td>
                               <td>Calle 16, Col. Yucatan</td>
-                              <td>Eliminar</td>
+                              <td><a href="#" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a> 
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -149,7 +150,7 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre Empresa</label>
+                                <label>Nombre</label>
                               </div>
                             </div>
                             <div class="col-md-7">
@@ -248,7 +249,7 @@
                                 <input type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Correo</label>
+                                <label>Email</label>
                               </div>
                             </div>
                             <div class="col-md-7 right">
@@ -265,7 +266,7 @@
 
                           <div class="row">
                             <div class="col-md-5">
-                              <input id="file-1" type="file" class="file btn-primary" multiple=true data-preview-file-type="any">
+                              <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
                             </div>
                           </div>
                         </form>

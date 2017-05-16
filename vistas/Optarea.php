@@ -102,11 +102,11 @@
                             <th>#</th>
                             <th>Nombre</th>
                             <th>Descripcion</th>
-                            <th>Empresa</th>
-                            <th>Costo</th>
+                            <th><i class="fa fa-bar-chart" aria-hidden="true"></i> Empresa</th>
+                            <th><i class="fa fa-usd" aria-hidden="true"></i> Costo</th>
                             <th>Duración</th>
                             <th>Rehusable</th>
-                            <th>Opciones</th>
+                            <th><i class="fa fa-wrench" aria-hidden="true"></i> Opciones</th>
                           </tr>
                           </thead>
                           <tbody>
@@ -118,7 +118,8 @@
                               <td>rh@hotmail.com</td>
                               <td>Calle 16, Col. Yucatan</td>
                               <td>Calle 16, Col. Yucatan</td>
-                              <td>Eliminar</td>
+                              <td><a href="#" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a> 
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -137,12 +138,13 @@
                             <div class="col-md-5">
                               <div class="group group-newancho">
                                 <select name="" id="">
+                                  <option value="0">Elige una empresa</option>
                                   <option value="1">1</option>
                                   <option value="1">2</option>
                                 </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Elige Empresa</label>
+                                <label>Empresa</label>
                               </div>
                             </div>
                             <div class="col-md-7">
@@ -172,27 +174,34 @@
                           <div class="row">
                             <div class="col-md-5">
                               <div class="group group-newancho">      
-                                  <input type="text" required>
+                                  <!-- <input type="text" required>
                                   <span class="highlight"></span>
                                   <span class="bar"></span>
-                                  <label>Descripción</label>
+                                  <label>Descripción</label> -->
+                                <div class="col-md-3">
+                                  <label for="descripcion" class="control-label">Descripcion</label>
+                                </div>
+                                <div class="col-md-9">
+                                  <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+                                </div>
                                 </div>
                             </div>
                           </div><br>
 
                           <div class="row">
-                            <div class="col-md-5 ">
-                                <label for="esInterno" class="interno">Es Interno</label>
+                            <div class="col-md-5 design-reusable">
+                                <label for="esInterno" class="reusable">Es Reusable</label>
                                 <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
                             </div>
                             <div class="col-md-7 right">
                               <br>
                               <div class="group b">      
-                                <button class="btn btn-primary adicional">Enviar</button>
+                                <button class="btn btn-primary adicional">Guardar</button>
                               </div>
 
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Cancelar</button>
+                              <div class="group b">
+                                <a href="#" class="btn btn-primary adicional">Cancelar</a>      
+                                <!-- <button >Cancelar</button> -->
                               </div>
                             </div>
                           </div>

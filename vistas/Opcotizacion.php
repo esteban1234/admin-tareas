@@ -49,8 +49,8 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#access" data-toggle="tab"><i class="fa fa-code"></i> <span>Cotización/Proyecto</span></a></li>
-                <li><a href="#roles" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Nueva Cotización/Proyecto</span></a></li>
+                <li class="active"><a href="#access" data-toggle="tab"><span>Cotización/Proyecto</span></a></li>
+                <li><a href="#roles" data-toggle="tab"><i class="fa fa-plus" aria-hidden="true"></i><span> Nueva Cotización/Proyecto</span></a></li>
               </ul>
             </nav>
               
@@ -87,12 +87,13 @@
 
                               <div class="group">
                                 <select name="" id="">
+                                  <option value="0">Todos</option>
                                   <option value="1">1</option>
                                   <option value="1">2</option>
                                 </select>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Elige Empresa</label>
+                                <label>Tipo</label>
                               </div>
                             </div> <br>
 
@@ -101,14 +102,14 @@
                                 <input  type="text" id="example1">
                                 <span class="highlight"></span>
                                 <span class="bar"></span><br>
-                                <label>Fecha</label>
+                                <label>Fecha Desde</label>
                               </div> 
                               
                               <div class="group">      
                                 <input  type="text" id="example2">
                                 <span class="highlight"></span>
                                 <span class="bar"></span><br>
-                                <label>Fecha</label>
+                                <label>Fecha Hasta</label>
                               </div>  
 
                               <div class="group left">      
@@ -149,7 +150,8 @@
                               <td>Calle 16, Col. Yucatan</td>
                               <td>Calle 16, Col. Yucatan</td>
                               <td>Calle 16, Col. Yucatan</td>
-                              <td>Eliminar</td>
+                              <td><a href="#" class="hover"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true" title="Editar"></i></a> 
+                              <a href="#" class="hover"><i class="fa fa-window-close fa-2x" aria-hidden="true" title="Eliminar"></i></a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -177,6 +179,7 @@
                             <div class="col-md-4">
                               <div class="group group-newancho">
                                 <select name="" id="">
+                                  <option value="0">Elige un cliente</option>
                                   <option value="1">1</option>
                                   <option value="1">2</option>
                                 </select>
@@ -189,6 +192,7 @@
                             <div class="col-md-4">
                              <div class="group group-newancho">
                                 <select name="" id="">
+                                  <option value="0">Elige una empresa</option>
                                   <option value="1">1</option>
                                   <option value="1">2</option>
                                 </select>
@@ -200,33 +204,27 @@
                           </div><br>
 
                           <div class="row">
-                             <div class="group">      
-                                <input  type="text" id="example1">
-                                <span class="highlight"></span>
-                                <span class="bar"></span><br>
-                                <label>Fecha</label>
-                              </div> 
+                             <div class="col-md-4">
+                               <div class="group group-newancho">      
+                                  <input  type="text" id="example4">
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span><br>
+                                  <label>Fecha</label>
+                                </div> 
+                             </div>
 
-                              <div class="group">      
-                                <!-- <div class="form-group"> -->
-                                  <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
-                                  <div class="col-sm-6">
-                                    <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
-                                  </div>
-                                <!-- </div> -->
+                              <div class="col-md-4">
+                                <div class="group design-interno">      
+                                  <label for="esInterno" class="">Es Interno</label>
+                                  <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
+                                </div>
                               </div>
-                                  
-                          <!-- <div class="row"> -->
-                            <div class="group">
-                              <br>
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Enviar</button>
+                              
+                              <div class="col-md-4">
+                                <div class="group group-newancho">
+                                  <button class="btn btn-primary adicional">Guardar Cambio</button>
+                                </div>
                               </div>
-
-                              <div class="group b">      
-                                <button class="btn btn-primary adicional">Cancelar</button>
-                              </div>
-                            </div>
                           </div>
                         </form>
                       </div>
@@ -234,7 +232,7 @@
 
                 <div class="panel">
                   <div class="panel-heading">
-                    <h3>Cotización/Proyecto
+                    <h3>Detalle
                         <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
                         <span class="caret"></span>
                       </button>
@@ -298,12 +296,6 @@
                             <div class="row">
                               <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
                               <div class="col-sm-6">
-                                <!-- <input id="toggle-one" checked type="checkbox">
-                                  <script>
-                                    $(function() {
-                                      $('#toggle-one').bootstrapToggle();
-                                    })
-                                  </script> -->
                               </div>
                             </div>
                           </div>
@@ -320,94 +312,147 @@
                   </div>
                 </div>
 
-                 <div class="panel">
-                  <div class="panel-heading">
-                    <h3>Detalle
-                      <button data-toggle="collapse" data-target="#collapse2" class="btn btn-large btn-primary pull-right">
-                        <span class="caret"></span>
-                      </button>
-                    </h3>
-                  </div>
+    <div class="panel">
+      <div class="panel-heading">
+        <h3>
+          Detalles<button data-toggle="collapse" data-target="#collapse2" class="btn btn-large btn-info pull-right"><span class="caret"></span></button>
+        </h3>
+      </div>
+    <div class="panel-collapse collapse in" id="collapse2">
+      <div class="panel-body">
+      <div id="subtareas_proyecto">
+        <!-- Aqui van a ir todos las tareas -->
 
-                  <div id="collapse2" class="panel-collapse fade in">
-                   <div class="panel-body">
-                     <div class="form-horizontal">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <div class="group group-newancho">      
-                                <input type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Tarea</label>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="col-md-2">
-                                <label for="descripcion" class="control-label">Descripcion</label>
-                              </div>
-                              <div class="col-md-10">
-                                <textarea class="form-control" id="descripcion" name="descripcion" rows="5"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <div class="group group-newancho">
-                                  <input name="unidadTiempo" id="" class="" value="Horas" disabled="" type="text">
-                                </div>
-                              </div>
-                            </div>
+        <div class="panel" id="panel-149492323789">
+        <div class="panel-heading btn-color">
+        <div class="row">
+        <div class="col-sm-10">
+        <big><span aria-haspopup="true" aria-expanded="true" data-toggle="collapse" data-target="#detalle_149492323789" style="cursor:pointer;">
+        <span id="btn-collapse_149492323789" class="glyphicon glyphicon-chevron-right"></span>&nbsp;<strong id="titulo_149492323789">Nombre de la Tarea</strong>
+        </span></big>
+        </div>
+        <div class="col-md-2 col-sm-10">
+        <big><span class="label label-default col-md-offset-6 col-md-6 hidden" aria-haspopup="true" aria-expanded="true" data-toggle="collapse" id="subtareasstr_149492323789" data-target="#detalle_149492323789" style="cursor:pointer;">0 subtareas</span></big>
+        <div class="dropdown pull-right">
+        <big><span class="text-default"><strong>$ <span id="total_149492323789">0.00</span></strong></span></big>
+        <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="opciones_149492323789" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span class="glyphicon glyphicon-option-vertical"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#" id="eliminar_149492323789">Eliminar</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="detalle_149492323789" class="panel-collapse collapse in">
+        <div class="panel-body form-horizontal">
+        <form action="#detalle_149492323789" id="form_detalle_149492323789" method="post">
+        <div class="panel-body">
+        <div id="crear_cotizacion">
+        <div class="form-horizontal">
+        <div class="col-md-6">
+          <div class="form-group">
+            <div class="group group-newancho">      
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>RFC</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-2">
+              <label for="descripcion" class="control-label">Descripcion</label>
+            </div>
+            <div class="col-md-10">
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="5"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="group group-newancho">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+              </select>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Elige Empresa</label>
+            </div>
+          </div>
 
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <!-- <input type='text'  id='datetimepicker4' /> -->
-                                <input name="costo" id="tarea_costo_149435397562" class="" value="" type="number">
-                                <span class="highlight"></span>
-                                <span class="bar"></span><br>
-                                <label>Costo</label>
-                              </div>
-                            </div>
+          <div class="row">
+            <div class="group group-newancho">
+              <input type='text'  id='datetimepicker4' />
+              <span class="highlight"></span>
+              <span class="bar"></span><br>
+              <label>Fecha Inicial</label>
+            </div>
+          </div>
 
-                            <div class="row">
-                              <div class="group group-newancho">
-                                <!-- <input type='text'  id='datetimepicker4' /> -->
-                                <input name="costo" id="tarea_costo_149435397562" class="" value="" type="number">
-                                <span class="highlight"></span>
-                                <span class="bar"></span><br>
-                                <label>Duración</label>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <label for="esInterno" class="control-label col-sm-2">Tiene Subtareas</label>
-                              <div class="col-sm-6">
-                                <input id="toggle-one" checked type="checkbox">
-                                  <!-- <script>
-                                    $(function() {
-                                      $('#toggle-one').bootstrapToggle();
-                                    })
-                                  </script> -->
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                   </div>
-                  </div>
-                </div>
-                <div class="panel panel-success">
-                  <div class="panel-heading">
-                    <h3>Total Cotización/Proyecto
-                      <span class="label label-info pull-right" id="costo_proyecto">$ 0.00</span>
-                    </h3>
-                  </div>
-                </div>
-                <div class="panel panel-success">
-                  <div class="panel-heading">
-                    <h3>Precio de Venta
-                    <span class="pull-right">$<input type="text" class="input-sm" name="precioventa" id="precio_venta" value=""></span>
-                    </h3>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="group group-newancho">
+              <select name="" id="">
+                <option value="1">1</option>
+                <option value="1">2</option>
+              </select>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Elige Empresa</label>
+            </div>
+          </div>
+          <div class="row">
+            <label for="esInterno" class="control-label col-sm-2">Es Interno</label>
+            <div class="col-sm-6">
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        <!-- <div id="subtareas_149492323789" class="hidden"></div> -->
+        </div>
+        <div class="panel-footer">
+        <div class="btn-group">
+        <button type="submit" class="btn btn-success" id="btnGuardar_149492323789" title="Guardar"><i class="glyphicon glyphicon-saved"></i></button>
+        <a class="btn btn-primary hidden" id="btnAgregar_149492323789" title="Agregar Subtarea"><i class="glyphicon glyphicon-tasks"></i> <i class="glyphicon glyphicon-plus"></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="panel-footer">
+        <div class="btn-group">
+          <a class="btn btn-primary hidden" id="btnAgregar_tarea" title="Agregar Subtarea"><i class="glyphicon glyphicon-tasks"></i> <i class="glyphicon glyphicon-plus"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-success">
+    <div class="panel-heading"><h3>Total Cotización/Proyecto<span class="label label-info pull-right" id="costo_proyecto">$ 0.00</span></h3></div>
+</div>
+<form action="http://athlon.mx/proyecto/cotizacion/cotizar" method="POST" accept-charset="utf-8">
+<div class="panel panel-success">
+    <div class="panel-heading"><h3>Precio de Venta<span class="pull-right">$ <input type="text" class="input-sm" name="precioventa" id="precio_venta" value=""></span></h3></div>
+</div>
+</div>
+<div class="btn-group">
+
+                    <button type="submit" class="btn btn-success" id="btnGuardar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar</button>
+                <input type="hidden" name="aprueba"  id="aprueba" value="0">
+            <button type="submit" class="btn btn-warning" id="btnGuardarAprobar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar y aprobar</button>
+            <a class="btn btn-danger" id="btnSalir" href="http://athlon.mx/proyecto/cotizacion">Salir</a>
+
+        </div>
+        </form>
+<div id="msg"></div>
+    <div class="modal fade" id="myModal" role="dialog">
+  </div>
+  </div>
               </section>  <!-- END tab-pane -->
             </section>  <!-- END tab-content -->
           </section> <!-- END tab-pane -->
@@ -429,6 +474,10 @@
           });
 
            $('#example3').datepicker({
+              format: "dd/mm/yyyy"
+          });
+
+            $('#example4').datepicker({
               format: "dd/mm/yyyy"
           });
       });

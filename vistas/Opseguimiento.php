@@ -49,10 +49,10 @@
           <section class="tab-pane active" id="configuration">
            <nav class="subbar">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#todos" data-toggle="tab"><i class="fa fa-code"></i> <span>Todos</span></a></li>
-                <li><a href="#prointernos" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Proyecto Internos</span></a></li>
-                <li><a href="#proexternos" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Proyecto Internos</span></a></li>
-                <li><a href="#mistareas" data-toggle="tab"><i class="fa fa-user"></i> <span>+ Mis Tareas</span></a></li>
+                <li class="active"><a href="#todos" data-toggle="tab"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> <span>Todos</span></a></li>
+                <li><a href="#prointernos" data-toggle="tab"><i class="fa fa-reply" aria-hidden="true"></i> <span>+ Proyecto Internos</span></a></li>
+                <li><a href="#proexternos" data-toggle="tab"><i class="fa fa-share" aria-hidden="true"></i> <span>+ Proyecto Externos</span></a></li>
+                <li><a href="#mistareas" data-toggle="tab"><i class="fa fa-sticky-note" aria-hidden="true"></i> <span>Mis Tareas</span></a></li>
               </ul>
             </nav>
               
@@ -67,14 +67,14 @@
                     </h3>
                   </div>
                   <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="container">
+                    <div class="col-md-12">
                       <div class="input-group">
-                      <input type="text" class="">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
-                      </span>
-                    </div>
-                    </div>
+                        <input type="text">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                        </span>
+                      </div>
+                    </div> <br><br><br>
                     <div class="panel-body">
                         <table class="table table-striped">
                           <thead>
@@ -102,22 +102,20 @@
                 <div class="panel">
                   <div class="panel-heading">
                     <h3>Proyectos <span class="badge">Cant:0</span>
-                    <a href="#" data-toggle="collapse" data-target="#collapse" class="btn btn-large btn-primary pull-right">
-                      <!-- <button > -->
+                      <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
                         <span class="caret"></span>
-                      <!-- </button> -->
-                    </a>
+                      </button>
                     </h3>
                   </div>
-                  <div class="container">
-                      <div class="input-group">
-                      <input type="text" class="">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
-                      </span>
-                    </div>
-                  </div>
                   <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input type="text">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                        </span>
+                      </div>
+                    </div> <br><br><br>
                     <div class="panel-body">
                         <table class="table table-striped">
                           <thead>
@@ -142,7 +140,7 @@
               </section>  <!-- END tab-pane -->
 
               <section class="tab-pane  fade in" id="proexternos">
-                <div class="panel">
+               <div class="panel">
                   <div class="panel-heading">
                     <h3>Proyectos <span class="badge">Cant:0</span>
                       <button data-toggle="collapse" data-target="#collapse1" class="btn btn-large btn-primary pull-right">
@@ -150,15 +148,15 @@
                       </button>
                     </h3>
                   </div>
-                  <div class="container">
-                      <div class="input-group">
-                      <input type="text" class="">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
-                      </span>
-                    </div>
-                  </div>
                   <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input type="text">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary adicional btn-width" type="button">Buscar</button>
+                        </span>
+                      </div>
+                    </div> <br><br><br>
                     <div class="panel-body">
                         <table class="table table-striped">
                           <thead>

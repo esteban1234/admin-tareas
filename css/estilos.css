@@ -201,6 +201,12 @@ nav.subbar > ul.nav.nav-tabs > li.active > a {
   width: 95%;
 }
 
+.align-left{
+  text-align: left;
+  margin: 0px;
+  padding-left: 3%;
+}
+
 input, select{
   font-size:18px;
   display: block;
@@ -327,6 +333,14 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   border: 0;
 }
 
+.color-botones{
+  background: #15AC67;
+}
+
+.quita-border{
+  border: 0px;
+}
+
 .btn:hover, .table-hover:hover{
   background-color: #2A3F54;
 }
@@ -373,11 +387,6 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   border: 2px solid red;
   height: 100%;
 }*/
-
-.input-op{
-  margin-left: 60%;
-  text-align: left;
-}
 
 .pr{
   border: 2px solid yellow;
@@ -435,6 +444,7 @@ input:focus ~ .highlight, select:focus ~ .highlight {
 
 .btn-color{
   background-color: #2A3F54 ;
+  border: .3px solid  #2A3F54;
 }
 
 .version{
@@ -447,6 +457,40 @@ input:focus ~ .highlight, select:focus ~ .highlight {
   border: 2px solid red;
 }
 
-.interno{
-  margin-left: 15%;
+.reusable{
+  margin-left: 23%;
 }
+
+.design-reusable{
+  text-align: left;
+  padding-left: 3%;
+}
+
+.design-radio{
+  text-align: left;
+}
+
+.label-radio{
+  color:#999; 
+  font-size:18px;
+  width: 100%;
+  font-weight:normal;
+  margin: 0px;
+  text-align: left;
+}
+
+.content-radio{
+  display: inline-block;
+  width: 20%;
+}
+
+.content-radio input, .content-radio p{
+  text-align: left;
+  width: 10%;
+}
+
+
+.design-interno{
+  width: 100%;
+}
+

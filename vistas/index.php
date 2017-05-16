@@ -94,23 +94,25 @@
                               </div>
                             </div>
 
-                            <div class="col-md-5">
-                              <div class="radio">
-                                 <div class="col-md-4">
+                            <div class="col-md-5 design-radio">
+                                <div class="row label-radio">
+                                   <p>Resultado</p>
+                                </div>
+                                <div class="row">
+                                  <div class="content-radio">
                                     <input type="radio" name="sexo" id="hombre" checked="selected">
                                     <p class="input-op">Todos</p>
                                  </div>
                                   
-                                  <div class="col-md-4">
+                                  <div class="content-radio">
                                     <input type="radio" name="sexo" id="mujer">
                                     <p class="input-op"><i class="fa fa-check" aria-hidden="true"></i></p> 
                                   </div>
 
-                                  <div class="col-md-4">
+                                  <div class="content-radio">
                                     <input type="radio" name="sexo" id="alien">
                                     <p class="input-op"><i class="fa fa-times" aria-hidden="true"></i></p>
                                   </div>
-                                  
                                 </div>
                             </div>
                             
@@ -133,12 +135,13 @@
                       <thead>
                         <tr class="table-color">
                         <th>#</th>
-                        <th>Nombre Cliente</th>
-                        <th>RFC</th>
-                        <th>Telefono</th>
-                        <th>Email</th>
-                        <th>Dirección</th>
-                        <th>Opciones</th>
+                        <th>Tabla</th>
+                        <th>Id</th>
+                        <th>Acción</th>
+                        <th>Usuario</th>
+                        <th>Fecha</th>
+                        <th>Sentencia</th>
+                        <th>Resultado</th>
                       </tr>
                       </thead>
                       <tbody>
@@ -150,6 +153,7 @@
                           <td>rh@hotmail.com</td>
                           <td>Calle 16, Col. Yucatan</td>
                           <td>Eliminar</td>
+                          <td>Opción</td>
                         </tr>
                       </tbody>
                     </table>

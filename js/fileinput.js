@@ -3693,7 +3693,7 @@
         previewFileExtSettings: {},
         buttonLabelClass: 'hidden-xs',
         browseIcon: '<i class="fa fa-file" aria-hidden="true"></i>&nbsp;',
-        browseClass: 'btn btn-primary',
+        browseClass: 'btn btn-primary color-botones quitar-border',
         removeIcon: '<i class="fa fa-times" aria-hidden="true"></i>',
         removeClass: 'btn btn-primary',
         cancelIcon: '<i class="glyphicon glyphicon-ban-circle"></i>',
