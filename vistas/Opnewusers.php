@@ -36,11 +36,11 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
-          <li class="active"><a href="#configuration" data-toggle="tab"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
-          <li><a href="http://localhost/github/admin-tareas/vistas/index.php#users" data-toggle="tab"><i class="fa fa-archive"></i> <span>Proyectos</span></a></li>
-          <li><a href="#mail" data-toggle="tab"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>
-          <li><a href="#mail" data-toggle="tab"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>
+          <li class="active"><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="catalago.php"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
+          <li><a href="utileria.php"><i class="fa fa-archive"></i> <span>Utilerias</span></a></li>  <!-- #users -->
+          <li><a href="usuario.php"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>  <!-- #utelerias -->
+          <li><a href="acercade.php"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>   <!-- #acercade -->
         </ul>
       </aside>
 
