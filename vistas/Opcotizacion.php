@@ -34,12 +34,12 @@
     </nav>  <!-- END navbar -->
       
     <article class="wrapper">
-     <aside class="sidebar">
+      <aside class="sidebar">
         <ul class="sidebar-nav">
           <li class="active"><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
-          <li><a href="catalago.php"><i class="fa fa-folder-open-o"></i> <span>Catálogos</span></a></li>
-          <li><a href="utileria.php"><i class="fa fa-archive"></i> <span>Utilerias</span></a></li>  <!-- #users -->
-          <li><a href="usuario.php"><i class="fa fa-users"></i> <span>Usuarios</span></a></li>  <!-- #utelerias -->
+          <li><a href="catalago.php"><i class="fa fa-folder-open-o"></i> <span>Catálogo</span></a></li>
+          <li><a href="utileria.php"><i class="fa fa-archive"></i> <span>Proyecto</span></a></li>  <!-- #users -->
+          <li><a href="usuario.php"><i class="fa fa-users"></i> <span>Utilerias</span></a></li>  <!-- #utelerias -->
           <li><a href="acercade.php"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>   <!-- #acercade -->
         </ul>
       </aside>
@@ -285,7 +285,7 @@
               <input type="text" required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>RFC</label>
+              <label>Tarea</label>
             </div>
           </div>
           <div class="form-group">
@@ -299,41 +299,35 @@
         </div>
         <div class="col-md-6">
           <div class="row">
-            <div class="group group-newancho">
-              <select name="" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
+             <div class="group group-newancho">      
+              <input type="text" value="" disabled required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>Elige Empresa</label>
+              <label>Unidad de Tiempo: HORAS</label>
             </div>
           </div>
 
           <div class="row">
             <div class="group group-newancho">
-              <input type='text'  id='datetimepicker4' />
+              <input type='number'>
               <span class="highlight"></span>
               <span class="bar"></span><br>
-              <label>Fecha Inicial</label>
+              <label>Costo</label>
             </div>
           </div>
 
           <div class="row">
             <div class="group group-newancho">
-              <select name="" id="">
-                <option value="1">1</option>
-                <option value="1">2</option>
-              </select>
+              <input type='number'>
               <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Elige Empresa</label>
+              <span class="bar"></span><br>
+              <label>Duracción</label>
             </div>
           </div><br>
           <div class="row">
-             <div class="col-md-7">
+             <div class="col-md-9">
                 <div class="group design-interno">      
-                  <label for="esInterno" class="">Es Interno</label>
+                  <label for="esInterno" class="">Tiene Subtarea</label>
                   <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
                 </div>
               </div>
@@ -383,10 +377,12 @@
   </div>
 
   <div class="btn-group">
-    <button type="submit" class="btn btn-success" id="btnGuardar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>  Guardar
+    <button type="submit" class="btn btn-success" id="btnGuardar"><i class="fa fa-sign-in" aria-hidden="true"></i>
+  Guardar
     </button>
     <input type="hidden" name="aprueba"  id="aprueba" value="0">
-    <button type="submit" class="btn btn-warning" id="btnGuardarAprobar"><i class="bg-default glyphicon glyphicon-floppy-disk"></i>Guardar y aprobar
+    <button type="submit" class="btn btn-warning" id="btnGuardarAprobar"><i class="fa fa-check-square-o" aria-hidden="true"></i>
+Guardar y aprobar
     </button>
     <a class="btn btn-danger" id="btnSalir" href="http://athlon.mx/proyecto/cotizacion">Salir</a>
   </div>

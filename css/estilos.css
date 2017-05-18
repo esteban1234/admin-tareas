@@ -486,7 +486,11 @@ input:focus ~ .highlight, select:focus ~ .highlight {
 
 .content-radio input, .content-radio p{
   text-align: left;
-  width: 10%;
+  width: 40%;
+}
+
+.input-op{
+  margin-left: 5%;
 }
 
 
