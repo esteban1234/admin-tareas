@@ -36,7 +36,7 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li class="active"><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li><a href="catalago.php"><i class="fa fa-folder-open-o"></i> <span>Catálogo</span></a></li>
           <li><a href="utileria.php"><i class="fa fa-archive"></i> <span>Proyecto</span></a></li>  <!-- #users -->
           <li><a href="usuario.php"><i class="fa fa-users"></i> <span>Utilerias</span></a></li>  <!-- #utelerias -->

@@ -36,9 +36,9 @@
     <article class="wrapper">
       <aside class="sidebar">
         <ul class="sidebar-nav">
-          <li class="active"><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
+          <li><a href="index.php"><i class="fa fa-dashboard"></i> <span>Index</span></a></li>
           <li><a href="catalago.php"><i class="fa fa-folder-open-o"></i> <span>Catálogo</span></a></li>
-          <li><a href="utileria.php"><i class="fa fa-archive"></i> <span>Proyecto</span></a></li>  <!-- #users -->
+          <li class="active"><a href="utileria.php"><i class="fa fa-archive"></i> <span>Proyecto</span></a></li>  <!-- #users -->
           <li><a href="usuario.php"><i class="fa fa-users"></i> <span>Utilerias</span></a></li>  <!-- #utelerias -->
           <li><a href="acercade.php"><i class="fa fa-cogs"></i> <span>Acerca de</span></a></li>   <!-- #acercade -->
         </ul>
@@ -325,7 +325,7 @@
             </div>
           </div><br>
           <div class="row">
-             <div class="col-sm-12 col-md-12 col-lg-9">
+             <div class="col-sm-12 col-md-12 col-lg-10">
                 <div class="group design-interno">      
                   <label for="esInterno" class="">Tiene Subtarea</label>
                   <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>

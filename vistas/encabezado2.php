@@ -23,7 +23,22 @@
 		<script src="../js/bootstrap-datetimepicker.js"></script>
 		<!-- <script src="../js/locales/es.js"></script> -->
 		<script src="../js/fileinput.js"></script>
+		<!-- <script>
+      $(function() {
+  
+          // elementos de la lista
+          var menues = $(".sidebar-nav li"); 
 
+          // manejador de click sobre todos los elementos
+          menues.click(function() {
+             // eliminamos active de todos los elementos
+             menues.removeClass("active");
+             // activamos el elemento clicado.
+             $(this).addClass("active");
+          });
+
+        });
+    </script> -->
 		
     	<!-- <script src="../js/bootstrap-datetimepicker.es.js"></script> -->
 		<!-- <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed" rel="stylesheet"> -->
