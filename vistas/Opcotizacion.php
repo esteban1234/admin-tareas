@@ -364,7 +364,7 @@
   <div class="panel panel-back-color">
     <div class="panel-heading">
       <h3>Precio de Venta
-        <span class="pull-right">
+        <span class="col-md-2 pull-right">
           <!-- <label for="basic-url">Your vanity URL</label> -->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">$</span>
