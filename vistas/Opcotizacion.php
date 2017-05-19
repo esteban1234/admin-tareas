@@ -289,10 +289,10 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="col-md-2">
+            <div class="col-sm-7 col-md-3">
               <label for="descripcion" class="control-label">Descripcion</label>
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-5 col-md-8">
               <textarea class="form-control" id="descripcion" name="descripcion" rows="5"></textarea>
             </div>
           </div>
