@@ -325,7 +325,7 @@
             </div>
           </div><br>
           <div class="row">
-             <div class="col-md-9">
+             <div class="col-sm-12 col-md-12 col-lg-9">
                 <div class="group design-interno">      
                   <label for="esInterno" class="">Tiene Subtarea</label>
                   <input type="checkbox" name="esInterno" id="esInterno" data-toggle="toggle" data-on="<i class='fa fa-check-square-o'></i>" data-off="<i class='glyphicon fa fa-times'></i>"  data-onstyle="primary" value='1'>
@@ -342,9 +342,11 @@
           
         <div class="panel-footer">
           <div class="row">
-            <div class="col-md-2">
-              <input type="button" class="btn btn-primary btn-color" value="Guardar Cambios" id="btncrear">    
-            </div>
+            <div class="col-md-4">
+              <div class="group pull-left">
+                <button class="btn btn-primary btn-color">Guardar Cambio</button>
+              </div>
+            </div> 
           </div>
         </div>
 
@@ -364,7 +366,7 @@
   <div class="panel panel-back-color">
     <div class="panel-heading">
       <h3>Precio de Venta
-        <span class="col-md-2 pull-right">
+        <span class="col-sm-4 col-md-3 col-lg-2 pull-right">
           <!-- <label for="basic-url">Your vanity URL</label> -->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon3">$</span>
